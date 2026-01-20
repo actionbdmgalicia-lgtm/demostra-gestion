@@ -1,0 +1,1259 @@
+{
+  "fairs": [
+    {
+      "id": "HIP-2026",
+      "name": "HIP 2026",
+      "status": "Active",
+      "date": "2026-02-15",
+      "clients": [
+        {
+          "id": "FF3-2026",
+          "name": "FF3",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 29523
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 900
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1009
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 432
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          },
+          "costs": []
+        },
+        {
+          "id": "KEEP-DOING-(ONIVIA)-2026",
+          "name": "KEEP DOING (ONIVIA)",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 24000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 900
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1009
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 432
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          },
+          "costs": []
+        }
+      ],
+      "realExpenses": [
+        {
+          "category": "CARPINTERIA",
+          "provider": "Maderas Perez",
+          "concept": "",
+          "totalAmount": 3000,
+          "date": "2026-01-18",
+          "distribution": {
+            "FF2-2026": 923.0769230769231,
+            "FF3-2026": 1038.4615384615383,
+            "KEEP-DOING-(ONIVIA)-2026": 1038.4615384615383
+          },
+          "distributionMode": "PROPORTIONAL",
+          "id": "EXP-1768756228036-zhotbxutx",
+          "createdAt": "2026-01-18T17:10:28.036Z"
+        },
+        {
+          "category": "MONTAJE",
+          "provider": "Montajes Martinez",
+          "concept": "",
+          "totalAmount": 4000,
+          "date": "2026-01-18",
+          "distribution": {
+            "FF2-2026": 1333.3333333333333,
+            "FF3-2026": 1333.3333333333333,
+            "KEEP-DOING-(ONIVIA)-2026": 1333.3333333333333
+          },
+          "distributionMode": "PROPORTIONAL",
+          "id": "EXP-1768756250520-hiknlpytb",
+          "createdAt": "2026-01-18T17:10:50.520Z"
+        },
+        {
+          "category": "SSFF",
+          "provider": "IFEVI",
+          "concept": "Alquiler zona VIP",
+          "totalAmount": 500,
+          "date": "2026-01-18",
+          "distribution": {
+            "FF2-2026": 166.66666666666666,
+            "FF3-2026": 166.66666666666666,
+            "KEEP-DOING-(ONIVIA)-2026": 166.66666666666666
+          },
+          "distributionMode": "PROPORTIONAL",
+          "id": "EXP-1768756276928-2gxl3xwdq",
+          "createdAt": "2026-01-18T17:11:16.928Z"
+        },
+        {
+          "category": "CARPINTERIA",
+          "provider": "Maderas",
+          "concept": "",
+          "totalAmount": 1200,
+          "date": "2026-01-20",
+          "distribution": {
+            "FF3-2026": 600,
+            "KEEP-DOING-(ONIVIA)-2026": 600
+          },
+          "distributionMode": "PROPORTIONAL",
+          "id": "EXP-1768906253829-73giabuss",
+          "createdAt": "2026-01-20T10:50:53.829Z"
+        }
+      ]
+    },
+    {
+      "id": "CONXEMAR",
+      "name": "CONXEMAR",
+      "status": "Planning",
+      "date": "2026-10-06",
+      "clients": [
+        {
+          "id": "TEST-1-1768730371605",
+          "name": "TEST 1",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 27000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 1700
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1065
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 456
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "SILLEDA-2026",
+      "name": "SILLEDA",
+      "status": "Active",
+      "date": "2026-01-18",
+      "clients": [
+        {
+          "id": "KOOL-TEST-1768731014187",
+          "name": "KOOL TEST",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 20000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 1700
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1065
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 456
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "MADRID-TEXTIL-2026-2026",
+      "name": "MADRID TEXTIL 2026",
+      "status": "Active",
+      "date": "2026-01-18",
+      "clients": [
+        {
+          "id": "FARM-FRITES---WORLD-WIDE-1768728387373-870",
+          "name": "FARM FRITES - WORLD WIDE",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 2730000647
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 1700
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1065
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 456
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          },
+          "costs": []
+        },
+        {
+          "id": "FF2-1768728387373-608",
+          "name": "FF2",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 25000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 800
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1002
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 429
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          },
+          "costs": []
+        },
+        {
+          "id": "FF3-1768728387373-737",
+          "name": "FF3",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 24000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 900
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1009
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 432
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          },
+          "costs": []
+        },
+        {
+          "id": "KEEP-DOING-(ONIVIA)-1768728387373-341",
+          "name": "KEEP DOING (ONIVIA)",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 24000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 900
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1009
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 432
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          },
+          "costs": []
+        }
+      ]
+    },
+    {
+      "id": "FERIA-NUEVA-2026",
+      "name": "FERIA NUEVA",
+      "status": "Active",
+      "date": "2026-01-18",
+      "clients": [
+        {
+          "id": "JUAN-TEST-FERIA-NUEVA-1768733343935",
+          "name": "JUAN TEST FERIA NUEVA",
+          "status": "Active",
+          "budget": {
+            "income": [
+              {
+                "category": "VENTA",
+                "description": "VENTA",
+                "amount": 27000
+              }
+            ],
+            "expenses": [
+              {
+                "category": "CARPINTERIA",
+                "description": "OTROS",
+                "estimated": 1700
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1065
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 456
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg ",
+                "estimated": 150
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810
+              },
+              {
+                "category": "MONTAJE",
+                "description": "DESMONTAJE",
+                "estimated": 750
+              },
+              {
+                "category": "MONTAJE",
+                "description": "MONTAJE",
+                "estimated": 3250
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS ",
+                "estimated": 750
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "VENTA",
+    "CARPINTERIA",
+    "MONTAJE",
+    "MATERIAL",
+    "TRANSPORTE",
+    "GASTOS VIAJE",
+    "MOB ALQ",
+    "ELECTRICIDAD",
+    "SSFF",
+    "MOB COMPRA",
+    "GRAFICA",
+    "GASTOS GG"
+  ]
+}
