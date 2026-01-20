@@ -321,9 +321,17 @@ export default function ReportsGenerator() {
                         Informes
                     </h1>
                 </div>
-                <button onClick={handleExport} className="btn-primary h-10 px-6 text-xs uppercase tracking-widest flex items-center gap-2">
-                    <ArrowDown size={14} /> Exportar
-                </button>
+                <div className="flex gap-2">
+                    <a href="/templates/plantilla_presupuestos.xlsx" download className="btn-secondary h-10 px-4 text-[10px] uppercase tracking-widest flex items-center gap-2">
+                        <FileChartColumn size={14} /> Plantilla Presup.
+                    </a>
+                    <a href="/templates/plantilla_costes.xlsx" download className="btn-secondary h-10 px-4 text-[10px] uppercase tracking-widest flex items-center gap-2">
+                        <FileChartColumn size={14} /> Plantilla Costes
+                    </a>
+                    <button onClick={handleExport} className="btn-primary h-10 px-6 text-xs uppercase tracking-widest flex items-center gap-2">
+                        <ArrowDown size={14} /> Exportar
+                    </button>
+                </div>
             </div>
 
             <div className="flex-grow p-0 lg:p-0 flex flex-col h-full overflow-hidden">

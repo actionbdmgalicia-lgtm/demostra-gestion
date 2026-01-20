@@ -1,260 +1,138 @@
 {
   "fairs": [
     {
-      "id": "HIP-2026",
-      "name": "HIP 2026",
+      "id": "HIP-1768913087302",
+      "name": "HIP",
       "status": "Active",
-      "date": "2026-02-15",
+      "date": "2026-01-01",
       "clients": [
         {
-          "id": "FF3-2026",
-          "name": "FF3",
+          "id": "FARM-FRITES---WORLD-WIDE-1768913087302",
+          "name": "FARM FRITES - WORLD WIDE",
           "status": "Active",
           "budget": {
             "income": [
               {
                 "category": "VENTA",
                 "description": "VENTA",
-                "amount": 29523
+                "amount": 27647.0
               }
             ],
             "expenses": [
               {
                 "category": "CARPINTERIA",
                 "description": "OTROS",
-                "estimated": 900
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1009
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 432
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
+                "estimated": 1700.0
               },
               {
                 "category": "MONTAJE",
                 "description": "MONTAJE",
-                "estimated": 3250
-              },
-              {
-                "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
-              },
-              {
-                "category": "TRANSPORTE",
-                "description": "TRANSPORTE",
-                "estimated": 800
-              }
-            ]
-          },
-          "costs": []
-        },
-        {
-          "id": "KEEP-DOING-(ONIVIA)-2026",
-          "name": "KEEP DOING (ONIVIA)",
-          "status": "Active",
-          "budget": {
-            "income": [
-              {
-                "category": "VENTA",
-                "description": "VENTA",
-                "amount": 24000
-              }
-            ],
-            "expenses": [
-              {
-                "category": "CARPINTERIA",
-                "description": "OTROS",
-                "estimated": 900
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1009
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 432
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
+                "estimated": 3250.0
               },
               {
                 "category": "MONTAJE",
                 "description": "DESMONTAJE",
-                "estimated": 750
+                "estimated": 750.0
               },
               {
                 "category": "MONTAJE",
-                "description": "MONTAJE",
-                "estimated": 3250
+                "description": "VARIOS",
+                "estimated": 750.0
               },
               {
-                "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96.0
               },
               {
                 "category": "TRANSPORTE",
                 "description": "TRANSPORTE",
-                "estimated": 800
+                "estimated": 800.0
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 456.47999999999996
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1065.1200000000001
               }
             ]
           },
@@ -263,469 +141,1300 @@
       ],
       "realExpenses": [
         {
+          "id": "EXP-1768913087406",
+          "category": "GRAFICA",
+          "provider": "Acanor F382",
+          "concept": "",
+          "totalAmount": 238.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "GRAFICA",
+          "provider": "Acanor F384",
+          "concept": "",
+          "totalAmount": 1889.89,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "GRAFICA",
+          "provider": "Acanor F419",
+          "concept": "",
+          "totalAmount": 497.15,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "GASTOS VIAJE",
+          "provider": "Air Europa F1269821",
+          "concept": "",
+          "totalAmount": 44.666666666666664,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "MATERIAL",
+          "provider": "BeMatrix F2502-0266",
+          "concept": "",
+          "totalAmount": 6549.54,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "GASTOS VIAJE",
+          "provider": "Comidas con factura",
+          "concept": "",
+          "totalAmount": 193.34666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "GASTOS VIAJE",
+          "provider": "Compostela Suites desmontaje F4405+F4406",
+          "concept": "",
+          "totalAmount": 163.78333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "GASTOS VIAJE",
+          "provider": "Compostela Suites montaje F4053",
+          "concept": "",
+          "totalAmount": 435.6133333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Conco Anton F224 carretilla",
+          "concept": "",
+          "totalAmount": 129.16666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087406",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Conco Anton F241 vacios",
+          "concept": "",
+          "totalAmount": 616.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
           "category": "CARPINTERIA",
-          "provider": "Maderas Perez",
+          "provider": "Dayjo F763 ida",
           "concept": "",
-          "totalAmount": 3000,
-          "date": "2026-01-18",
-          "distribution": {
-            "FF2-2026": 923.0769230769231,
-            "FF3-2026": 1038.4615384615383,
-            "KEEP-DOING-(ONIVIA)-2026": 1038.4615384615383
-          },
-          "distributionMode": "PROPORTIONAL",
-          "id": "EXP-1768756228036-zhotbxutx",
-          "createdAt": "2026-01-18T17:10:28.036Z"
+          "totalAmount": 251.66666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
         },
         {
-          "category": "MONTAJE",
-          "provider": "Montajes Martinez",
+          "id": "EXP-1768913087407",
+          "category": "TRANSPORTE",
+          "provider": "Dayjo F846 retornos",
           "concept": "",
-          "totalAmount": 4000,
-          "date": "2026-01-18",
-          "distribution": {
-            "FF2-2026": 1333.3333333333333,
-            "FF3-2026": 1333.3333333333333,
-            "KEEP-DOING-(ONIVIA)-2026": 1333.3333333333333
-          },
-          "distributionMode": "PROPORTIONAL",
-          "id": "EXP-1768756250520-hiknlpytb",
-          "createdAt": "2026-01-18T17:10:50.520Z"
+          "totalAmount": 483.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
         },
         {
-          "category": "SSFF",
-          "provider": "IFEVI",
-          "concept": "Alquiler zona VIP",
-          "totalAmount": 500,
-          "date": "2026-01-18",
-          "distribution": {
-            "FF2-2026": 166.66666666666666,
-            "FF3-2026": 166.66666666666666,
-            "KEEP-DOING-(ONIVIA)-2026": 166.66666666666666
-          },
-          "distributionMode": "PROPORTIONAL",
-          "id": "EXP-1768756276928-2gxl3xwdq",
-          "createdAt": "2026-01-18T17:11:16.928Z"
-        },
-        {
+          "id": "EXP-1768913087407",
           "category": "CARPINTERIA",
-          "provider": "Maderas",
+          "provider": "Diego Suarez F8",
           "concept": "",
-          "totalAmount": 1200,
-          "date": "2026-01-20",
-          "distribution": {
-            "FF3-2026": 600,
-            "KEEP-DOING-(ONIVIA)-2026": 600
-          },
-          "distributionMode": "PROPORTIONAL",
-          "id": "EXP-1768906253829-73giabuss",
-          "createdAt": "2026-01-20T10:50:53.829Z"
-        }
-      ]
-    },
-    {
-      "id": "CONXEMAR",
-      "name": "CONXEMAR",
-      "status": "Planning",
-      "date": "2026-10-06",
-      "clients": [
-        {
-          "id": "TEST-1-1768730371605",
-          "name": "TEST 1",
-          "status": "Active",
-          "budget": {
-            "income": [
-              {
-                "category": "VENTA",
-                "description": "VENTA",
-                "amount": 27000
-              }
-            ],
-            "expenses": [
-              {
-                "category": "CARPINTERIA",
-                "description": "OTROS",
-                "estimated": 1700
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1065
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 456
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
-              },
-              {
-                "category": "MONTAJE",
-                "description": "MONTAJE",
-                "estimated": 3250
-              },
-              {
-                "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
-              },
-              {
-                "category": "TRANSPORTE",
-                "description": "TRANSPORTE",
-                "estimated": 800
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "SILLEDA-2026",
-      "name": "SILLEDA",
-      "status": "Active",
-      "date": "2026-01-18",
-      "clients": [
-        {
-          "id": "KOOL-TEST-1768731014187",
-          "name": "KOOL TEST",
-          "status": "Active",
-          "budget": {
-            "income": [
-              {
-                "category": "VENTA",
-                "description": "VENTA",
-                "amount": 20000
-              }
-            ],
-            "expenses": [
-              {
-                "category": "CARPINTERIA",
-                "description": "OTROS",
-                "estimated": 1700
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1065
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 456
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
-              },
-              {
-                "category": "MONTAJE",
-                "description": "MONTAJE",
-                "estimated": 3250
-              },
-              {
-                "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
-              },
-              {
-                "category": "TRANSPORTE",
-                "description": "TRANSPORTE",
-                "estimated": 800
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "MADRID-TEXTIL-2026-2026",
-      "name": "MADRID TEXTIL 2026",
-      "status": "Active",
-      "date": "2026-01-18",
-      "clients": [
-        {
-          "id": "FARM-FRITES---WORLD-WIDE-1768728387373-870",
-          "name": "FARM FRITES - WORLD WIDE",
-          "status": "Active",
-          "budget": {
-            "income": [
-              {
-                "category": "VENTA",
-                "description": "VENTA",
-                "amount": 2730000647
-              }
-            ],
-            "expenses": [
-              {
-                "category": "CARPINTERIA",
-                "description": "OTROS",
-                "estimated": 1700
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1065
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 456
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
-              },
-              {
-                "category": "MONTAJE",
-                "description": "MONTAJE",
-                "estimated": 3250
-              },
-              {
-                "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
-              },
-              {
-                "category": "TRANSPORTE",
-                "description": "TRANSPORTE",
-                "estimated": 800
-              }
-            ]
-          },
-          "costs": []
+          "totalAmount": 943.3333333333334,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
         },
         {
-          "id": "FF2-1768728387373-608",
+          "id": "EXP-1768913087407",
+          "category": "CARPINTERIA",
+          "provider": "EcoHastial F7",
+          "concept": "",
+          "totalAmount": 434.5333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "GRAFICA",
+          "provider": "Ecotex F250130",
+          "concept": "",
+          "totalAmount": 1745.17,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "COMPRA",
+          "provider": "EfectoLed FF51-25912",
+          "concept": "",
+          "totalAmount": 75.7,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "CARPINTERIA",
+          "provider": "Franco Castillo F49",
+          "concept": "",
+          "totalAmount": 458.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "GASTOS VIAJE",
+          "provider": "Froiz F213 compra",
+          "concept": "",
+          "totalAmount": 44.626666666666665,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "GASTOS VIAJE",
+          "provider": "Gastos viaje, tiquets, parking",
+          "concept": "",
+          "totalAmount": 347.77,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "GASTOS VIAJE",
+          "provider": "Hotel Limehome Olalla F1753",
+          "concept": "",
+          "totalAmount": 202.72666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "GRAFICA",
+          "provider": "Julio Moreno F15 vinilero",
+          "concept": "",
+          "totalAmount": 270.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Leroy Merlin+Bauhaus varios",
+          "concept": "",
+          "totalAmount": 79.67,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "leroyMerlin varios F058-0002-640451",
+          "concept": "",
+          "totalAmount": 208.31,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderal F35",
+          "concept": "",
+          "totalAmount": 3073.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "CARPINTERIA",
+          "provider": "Maderarfe F456",
+          "concept": "",
+          "totalAmount": 272.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR448",
+          "concept": "",
+          "totalAmount": 119.52,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR449",
+          "concept": "",
+          "totalAmount": 786.37,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR489",
+          "concept": "",
+          "totalAmount": 381.06,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR490",
+          "concept": "",
+          "totalAmount": 89.2,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR505",
+          "concept": "",
+          "totalAmount": 880.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR543",
+          "concept": "",
+          "totalAmount": 89.2,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR544",
+          "concept": "",
+          "totalAmount": 24.26,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR574",
+          "concept": "",
+          "totalAmount": 89.2,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "COMPRA",
+          "provider": "Maisons du monde alfombras F10001479312",
+          "concept": "",
+          "totalAmount": 251.97,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "CARPINTERIA",
+          "provider": "MR Carpenter F4",
+          "concept": "",
+          "totalAmount": 1148.25,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "CARPINTERIA",
+          "provider": "Narciso Carvajal F8",
+          "concept": "",
+          "totalAmount": 458.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Proa F504129",
+          "concept": "",
+          "totalAmount": 21.71,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "GASTOS VIAJE",
+          "provider": "Renfe 15796654 Junior",
+          "concept": "",
+          "totalAmount": 18.09,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087407",
+          "category": "MATERIAL",
+          "provider": "Rui Silva moqueta F373",
+          "concept": "",
+          "totalAmount": 36.16,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "COMPRA",
+          "provider": "Sklum mesitas F11-95560",
+          "concept": "",
+          "totalAmount": 60.25,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "MATERIAL",
+          "provider": "Tomifer F116 varios",
+          "concept": "",
+          "totalAmount": 18.013333333333332,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "TRANSPORTE",
+          "provider": "Ttes DiazVillar F377 ida",
+          "concept": "",
+          "totalAmount": 283.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "Ultranza F18",
+          "concept": "",
+          "totalAmount": 1506.6666666666667,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "Workout F2150 montaje",
+          "concept": "",
+          "totalAmount": 183.60666666666668,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "Workout F2436 desmontaje",
+          "concept": "",
+          "totalAmount": 112.16333333333334,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "MATERIAL",
+          "provider": "Wurth F4733648701 tornilleria",
+          "concept": "",
+          "totalAmount": 78.39666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GRAFICA",
+          "provider": "Acanor F381",
+          "concept": "",
+          "totalAmount": 399.75,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 399.75
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Air Europa F1269821",
+          "concept": "",
+          "totalAmount": 44.666666666666664,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 44.666666666666664
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "TRANSPORTE",
+          "provider": "Carburos Metalicos F0472098040",
+          "concept": "",
+          "totalAmount": 61.98,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 61.98
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Comidas con factura",
+          "concept": "",
+          "totalAmount": 193.34666666666666,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 193.34666666666666
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Compostela Suites desmontaje F4405+F4406",
+          "concept": "",
+          "totalAmount": 163.78333333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 163.78333333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Compostela Suites montaje F4053",
+          "concept": "",
+          "totalAmount": 435.6133333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 435.6133333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Conco Anton F224 carretilla",
+          "concept": "",
+          "totalAmount": 129.16666666666666,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 129.16666666666666
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Conco Anton F241 vacios",
+          "concept": "",
+          "totalAmount": 132.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 132.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "grafica",
+          "provider": "Dayjo F763 ida",
+          "concept": "",
+          "totalAmount": 251.66666666666666,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 251.66666666666666
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "TRANSPORTE",
+          "provider": "Dayjo F846 retornos",
+          "concept": "",
+          "totalAmount": 483.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 483.3333333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "Diego Suarez F8",
+          "concept": "",
+          "totalAmount": 943.3333333333334,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 943.3333333333334
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "ALQUILER",
+          "provider": "Distrirama F2503729",
+          "concept": "",
+          "totalAmount": 373.73,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 373.73
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "EcoHastial F7",
+          "concept": "",
+          "totalAmount": 434.5333333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 434.5333333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "MATERIAL",
+          "provider": "Forjarousa F68",
+          "concept": "",
+          "totalAmount": 67.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 67.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "Franco Castillo F49",
+          "concept": "",
+          "totalAmount": 458.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 458.3333333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Froiz F213 compra",
+          "concept": "",
+          "totalAmount": 44.626666666666665,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 44.626666666666665
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Gastos viaje, tiquets, parking",
+          "concept": "",
+          "totalAmount": 347.77,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 347.77
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GASTOS VIAJE",
+          "provider": "Hotel Limehome Olalla F1753",
+          "concept": "",
+          "totalAmount": 202.72666666666666,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 202.72666666666666
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "ALQUILER",
+          "provider": "Imagen3 mesas F1092",
+          "concept": "",
+          "totalAmount": 314.28,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 314.28
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "GRAFICA",
+          "provider": "Julio Moreno F15 vinilero",
+          "concept": "",
+          "totalAmount": 270.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 270.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "MATERIAL",
+          "provider": "Leroy Merlin+Bauhaus varios",
+          "concept": "",
+          "totalAmount": 79.67,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 79.67
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "MATERIAL",
+          "provider": "Maderal F35",
+          "concept": "",
+          "totalAmount": 135.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 135.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "MR Carpenter F4",
+          "concept": "",
+          "totalAmount": 286.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 286.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "CARPINTERIA",
+          "provider": "Narciso Carvajal F8",
+          "concept": "",
+          "totalAmount": 458.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 458.3333333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087408",
+          "category": "MATERIAL",
+          "provider": "Proa F504129",
+          "concept": "",
+          "totalAmount": 50.55,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 50.55
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Renfe 15796654 Junior",
+          "concept": "",
+          "totalAmount": 18.09,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 18.09
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Tomifer F116 varios",
+          "concept": "",
+          "totalAmount": 18.013333333333332,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 18.013333333333332
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "TRANSPORTE",
+          "provider": "Ttes DiazVillar F377 ida",
+          "concept": "",
+          "totalAmount": 283.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 283.3333333333333
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "Ultranza F18",
+          "concept": "",
+          "totalAmount": 1506.6666666666667,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 1506.6666666666667
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "Workout F2150 montaje",
+          "concept": "",
+          "totalAmount": 183.60666666666668,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 183.60666666666668
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "Workout F2436 desmontaje",
+          "concept": "",
+          "totalAmount": 112.16333333333334,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 112.16333333333334
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Wurth F4733648701 tornilleria",
+          "concept": "",
+          "totalAmount": 78.39666666666666,
+          "date": "2026-01-01",
+          "distribution": {
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 78.39666666666666
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GRAFICA",
+          "provider": "Acanor F383",
+          "concept": "",
+          "totalAmount": 1617.71,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Air Europa F1269821",
+          "concept": "",
+          "totalAmount": 44.666666666666664,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Comidas con factura",
+          "concept": "",
+          "totalAmount": 193.34666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Compostela Suites desmontaje F4405+F4406",
+          "concept": "",
+          "totalAmount": 163.78333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Compostela Suites montaje F4053",
+          "concept": "",
+          "totalAmount": 435.6133333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Conco Anton F224 carretilla",
+          "concept": "",
+          "totalAmount": 129.16666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Conco Anton F241 vacios",
+          "concept": "",
+          "totalAmount": 418.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "COMPRA",
+          "provider": "Dayjo F763 ida",
+          "concept": "",
+          "totalAmount": 251.66666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "TRANSPORTE",
+          "provider": "Dayjo F846 retornos",
+          "concept": "",
+          "totalAmount": 483.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "Diego Suarez F8",
+          "concept": "",
+          "totalAmount": 943.3333333333334,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "EcoHastial F7",
+          "concept": "",
+          "totalAmount": 434.5333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "Franco Castillo F49",
+          "concept": "",
+          "totalAmount": 458.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Froiz F213 compra",
+          "concept": "",
+          "totalAmount": 44.626666666666665,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Gastos viaje, tiquets, parking",
+          "concept": "",
+          "totalAmount": 347.77,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GASTOS VIAJE",
+          "provider": "Hotel Limehome Olalla F1753",
+          "concept": "",
+          "totalAmount": 202.72666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "GRAFICA",
+          "provider": "Julio Moreno F15 vinilero",
+          "concept": "",
+          "totalAmount": 270.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Leroy Merlin+Bauhaus varios",
+          "concept": "",
+          "totalAmount": 79.67,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "leroyMerlin vallas F058-0002-633271",
+          "concept": "",
+          "totalAmount": 264.47,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Maderal F35",
+          "concept": "",
+          "totalAmount": 275.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Maderas GVia FR573",
+          "concept": "",
+          "totalAmount": 595.42,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Maderas Porriño F25011210",
+          "concept": "",
+          "totalAmount": 593.63,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "MATERIAL",
+          "provider": "Montecolino F327 adoquines",
+          "concept": "",
+          "totalAmount": 297.62,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087409",
+          "category": "CARPINTERIA",
+          "provider": "MR Carpenter F4",
+          "concept": "",
+          "totalAmount": 1046.0,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "CARPINTERIA",
+          "provider": "Narciso Carvajal F8",
+          "concept": "",
+          "totalAmount": 458.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "MATERIAL",
+          "provider": "Proa F504129",
+          "concept": "",
+          "totalAmount": 89.76,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "GASTOS VIAJE",
+          "provider": "Renfe 15796654 Junior",
+          "concept": "",
+          "totalAmount": 18.09,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "MATERIAL",
+          "provider": "Rui Silva pvc madera F373",
+          "concept": "",
+          "totalAmount": 339.5,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "MATERIAL",
+          "provider": "Tomifer F116 varios",
+          "concept": "",
+          "totalAmount": 18.013333333333332,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "TRANSPORTE",
+          "provider": "Ttes DiazVillar F377 ida",
+          "concept": "",
+          "totalAmount": 283.3333333333333,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "CARPINTERIA",
+          "provider": "Ultranza F18",
+          "concept": "",
+          "totalAmount": 1506.6666666666667,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "CARPINTERIA",
+          "provider": "Workout F2150 montaje",
+          "concept": "",
+          "totalAmount": 183.60666666666668,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "CARPINTERIA",
+          "provider": "Workout F2436 desmontaje",
+          "concept": "",
+          "totalAmount": 112.16333333333334,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087410",
+          "category": "MATERIAL",
+          "provider": "Wurth F4733648701 tornilleria",
+          "concept": "",
+          "totalAmount": 78.39666666666666,
+          "date": "2026-01-01",
+          "distribution": {},
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        }
+      ]
+    },
+    {
+      "id": "HIP-2026-1768913087306",
+      "name": "HIP 2026",
+      "status": "Active",
+      "date": "2026-01-01",
+      "clients": [
+        {
+          "id": "FF2-1768913087306",
           "name": "FF2",
           "status": "Active",
           "budget": {
@@ -733,126 +1442,131 @@
               {
                 "category": "VENTA",
                 "description": "VENTA",
-                "amount": 25000
+                "amount": 25000.0
               }
             ],
             "expenses": [
               {
                 "category": "CARPINTERIA",
                 "description": "OTROS",
-                "estimated": 800
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1002
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 429
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
+                "estimated": 800.0
               },
               {
                 "category": "MONTAJE",
                 "description": "MONTAJE",
-                "estimated": 3250
+                "estimated": 3250.0
               },
               {
                 "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
+                "description": "DESMONTAJE",
+                "estimated": 750.0
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS",
+                "estimated": 750.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96.0
               },
               {
                 "category": "TRANSPORTE",
                 "description": "TRANSPORTE",
-                "estimated": 800
+                "estimated": 800.0
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 429.47999999999996
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1002.1200000000001
               }
             ]
           },
           "costs": []
         },
         {
-          "id": "FF3-1768728387373-737",
+          "id": "FF3-1768913087309",
           "name": "FF3",
           "status": "Active",
           "budget": {
@@ -860,126 +1574,140 @@
               {
                 "category": "VENTA",
                 "description": "VENTA",
-                "amount": 24000
+                "amount": 24000.0
               }
             ],
             "expenses": [
               {
                 "category": "CARPINTERIA",
                 "description": "OTROS",
-                "estimated": 900
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1009
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 432
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
+                "estimated": 900.0
               },
               {
                 "category": "MONTAJE",
                 "description": "MONTAJE",
-                "estimated": 3250
+                "estimated": 3250.0
               },
               {
                 "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
+                "description": "DESMONTAJE",
+                "estimated": 750.0
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS",
+                "estimated": 750.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96.0
               },
               {
                 "category": "TRANSPORTE",
                 "description": "TRANSPORTE",
-                "estimated": 800
+                "estimated": 800.0
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 432.47999999999996
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1009.1200000000001
               }
             ]
           },
           "costs": []
-        },
+        }
+      ],
+      "realExpenses": []
+    },
+    {
+      "id": "ACUTELAN-1768913087313",
+      "name": "ACUTELAN",
+      "status": "Active",
+      "date": "2026-01-01",
+      "clients": [
         {
-          "id": "KEEP-DOING-(ONIVIA)-1768728387373-341",
+          "id": "KEEP-DOING-(ONIVIA)-1768913087313",
           "name": "KEEP DOING (ONIVIA)",
           "status": "Active",
           "budget": {
@@ -987,273 +1715,327 @@
               {
                 "category": "VENTA",
                 "description": "VENTA",
-                "amount": 24000
+                "amount": 24000.0
               }
             ],
             "expenses": [
               {
                 "category": "CARPINTERIA",
                 "description": "OTROS",
-                "estimated": 900
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1009
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 432
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
+                "estimated": 900.0
               },
               {
                 "category": "MONTAJE",
                 "description": "MONTAJE",
-                "estimated": 3250
+                "estimated": 3250.0
               },
               {
                 "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
+                "description": "DESMONTAJE",
+                "estimated": 750.0
+              },
+              {
+                "category": "MONTAJE",
+                "description": "VARIOS",
+                "estimated": 750.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "LINOLEO cuadrados + IMPRESO",
+                "estimated": 270.0
+              },
+              {
+                "category": "MATERIAL",
+                "description": "tarima base + mader",
+                "estimated": 96.0
               },
               {
                 "category": "TRANSPORTE",
                 "description": "TRANSPORTE",
-                "estimated": 800
+                "estimated": 800.0
+              },
+              {
+                "category": "TRANSPORTE",
+                "description": "TRANSPORTE",
+                "estimated": 800.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "HOTEL",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "VUELOS",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TAXI/COCHE",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "TRASLADOS AEROPUERTO",
+                "estimated": 50.0
+              },
+              {
+                "category": "GASTOS VIAJE",
+                "description": "DIETAS",
+                "estimated": 500.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "mob gener",
+                "estimated": 780.0
+              },
+              {
+                "category": "MOB ALQ",
+                "description": "tarima",
+                "estimated": 810.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "tekox + enchufes",
+                "estimated": 1620.0
+              },
+              {
+                "category": "ELECTRICIDAD",
+                "description": "cables y varios",
+                "estimated": 240.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "PRODUCCION",
+                "estimated": 1300.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "INSTALACION",
+                "estimated": 600.0
+              },
+              {
+                "category": "GRAFICA",
+                "description": "TEXTIL colg",
+                "estimated": 150.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "DISEÑO",
+                "estimated": 450.0
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "IMPREVISTOS (3% resto gastos)",
+                "estimated": 432.47999999999996
+              },
+              {
+                "category": "GASTOS GG",
+                "description": "GG (7% resto gastos)",
+                "estimated": 1009.1200000000001
               }
             ]
           },
           "costs": []
         }
-      ]
-    },
-    {
-      "id": "FERIA-NUEVA-2026",
-      "name": "FERIA NUEVA",
-      "status": "Active",
-      "date": "2026-01-18",
-      "clients": [
+      ],
+      "realExpenses": [
         {
-          "id": "JUAN-TEST-FERIA-NUEVA-1768733343935",
-          "name": "JUAN TEST FERIA NUEVA",
-          "status": "Active",
-          "budget": {
-            "income": [
-              {
-                "category": "VENTA",
-                "description": "VENTA",
-                "amount": 27000
-              }
-            ],
-            "expenses": [
-              {
-                "category": "CARPINTERIA",
-                "description": "OTROS",
-                "estimated": 1700
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "cables y varios",
-                "estimated": 240
-              },
-              {
-                "category": "ELECTRICIDAD",
-                "description": "tekox + enchufes",
-                "estimated": 1620
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "DISEÑO",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "GG (7% resto gastos)",
-                "estimated": 1065
-              },
-              {
-                "category": "GASTOS GG",
-                "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 456
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "DIETAS",
-                "estimated": 500
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "HOTEL",
-                "estimated": 450
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TAXI/COCHE",
-                "estimated": 150
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "TRASLADOS AEROPUERTO",
-                "estimated": 50
-              },
-              {
-                "category": "GASTOS VIAJE",
-                "description": "VUELOS",
-                "estimated": 150
-              },
-              {
-                "category": "GRAFICA",
-                "description": "INSTALACION",
-                "estimated": 600
-              },
-              {
-                "category": "GRAFICA",
-                "description": "PRODUCCION",
-                "estimated": 1300
-              },
-              {
-                "category": "GRAFICA",
-                "description": "TEXTIL colg ",
-                "estimated": 150
-              },
-              {
-                "category": "MATERIAL",
-                "description": "LINOLEO cuadrados + IMPRESO",
-                "estimated": 270
-              },
-              {
-                "category": "MATERIAL",
-                "description": "tarima base + mader",
-                "estimated": 96
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "mob gener",
-                "estimated": 780
-              },
-              {
-                "category": "MOB ALQ",
-                "description": "tarima",
-                "estimated": 810
-              },
-              {
-                "category": "MONTAJE",
-                "description": "DESMONTAJE",
-                "estimated": 750
-              },
-              {
-                "category": "MONTAJE",
-                "description": "MONTAJE",
-                "estimated": 3250
-              },
-              {
-                "category": "MONTAJE",
-                "description": "VARIOS ",
-                "estimated": 750
-              },
-              {
-                "category": "TRANSPORTE",
-                "description": "TRANSPORTE",
-                "estimated": 800
-              }
-            ]
-          }
+          "id": "EXP-1768913087394",
+          "category": "GASTOS VIAJE",
+          "provider": "Acanor F2133",
+          "concept": "",
+          "totalAmount": 18.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 18.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "GASTOS VIAJE",
+          "provider": "Bip&Drive peajes furgo",
+          "concept": "",
+          "totalAmount": 70.28,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 70.28
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "GASTOS VIAJE",
+          "provider": "Booking apartamento",
+          "concept": "",
+          "totalAmount": 444.1,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 444.1
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "GASTOS VIAJE",
+          "provider": "Comidas-Gastos",
+          "concept": "",
+          "totalAmount": 211.42,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 211.42
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Fermasa F978 torillo",
+          "concept": "",
+          "totalAmount": 90.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 90.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "SERVICIOS FERIALES",
+          "provider": "Fermasa F992 vacios",
+          "concept": "",
+          "totalAmount": 75.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 75.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "CARPINTERIA",
+          "provider": "Forjarousa F298",
+          "concept": "",
+          "totalAmount": 2795.45,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 2795.45
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "MATERIAL",
+          "provider": "Moquetas Roldan F253034",
+          "concept": "",
+          "totalAmount": 736.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 736.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "CARPINTERIA",
+          "provider": "MR Carpenter F21",
+          "concept": "",
+          "totalAmount": 200.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 200.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "CARPINTERIA",
+          "provider": "Pablo F39",
+          "concept": "",
+          "totalAmount": 1635.81,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 1635.81
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "MATERIAL",
+          "provider": "Proa F530723",
+          "concept": "",
+          "totalAmount": 39.76,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 39.76
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "TRANSPORTE",
+          "provider": "Schenker envio juego a Onivia",
+          "concept": "",
+          "totalAmount": 54.01,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 54.01
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "TRANSPORTE",
+          "provider": "Ttes Touceda F409",
+          "concept": "",
+          "totalAmount": 2700.0,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 2700.0
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "GASTOS VIAJE",
+          "provider": "Vueling FC202500000669997 Junior",
+          "concept": "",
+          "totalAmount": 159.08,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 159.08
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
+        },
+        {
+          "id": "EXP-1768913087394",
+          "category": "MATERIAL",
+          "provider": "Wurth F4734738850",
+          "concept": "",
+          "totalAmount": 266.38,
+          "date": "2026-01-01",
+          "distribution": {
+            "KEEP-DOING-(ONIVIA)-1768913087313": 266.38
+          },
+          "distributionMode": "MANUAL",
+          "createdAt": "2026-01-20T12:44:47.000Z"
         }
       ]
     }
-  ],
-  "categories": [
-    "VENTA",
-    "CARPINTERIA",
-    "MONTAJE",
-    "MATERIAL",
-    "TRANSPORTE",
-    "GASTOS VIAJE",
-    "MOB ALQ",
-    "ELECTRICIDAD",
-    "SSFF",
-    "MOB COMPRA",
-    "GRAFICA",
-    "GASTOS GG"
   ]
 }
