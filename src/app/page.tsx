@@ -4,6 +4,8 @@ import { createFair } from '@/app/actions_home';
 import FairList from '@/components/FairList'; // New client component for filtering
 import { Plus, Copy, LayoutGrid, TrendingUp } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const fairs = await getFairs();
 

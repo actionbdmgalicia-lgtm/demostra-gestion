@@ -1,11 +1,7 @@
-
 import { getFairs } from '@/lib/api';
 import MatrixEditor from '@/components/MatrixEditor';
 
-export async function generateStaticParams() {
-    const fairs = await getFairs();
-    return fairs.map((f: any) => ({ id: f.id }));
-}
+export const dynamic = 'force-dynamic';
 
 export default async function FeriaDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
