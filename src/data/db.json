@@ -127,12 +127,12 @@
               {
                 "category": "GASTOS GG",
                 "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 456.47999999999996
+                "estimated": 456.48
               },
               {
                 "category": "GASTOS GG",
                 "description": "GG (7% resto gastos)",
-                "estimated": 1065.1200000000001
+                "estimated": 1065.12
               }
             ]
           },
@@ -178,7 +178,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Air Europa F1269821",
           "concept": "",
-          "totalAmount": 44.666666666666664,
+          "totalAmount": 44.67,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -200,7 +200,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Comidas con factura",
           "concept": "",
-          "totalAmount": 193.34666666666666,
+          "totalAmount": 193.35,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -211,7 +211,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Compostela Suites desmontaje F4405+F4406",
           "concept": "",
-          "totalAmount": 163.78333333333333,
+          "totalAmount": 163.78,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -222,7 +222,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Compostela Suites montaje F4053",
           "concept": "",
-          "totalAmount": 435.6133333333333,
+          "totalAmount": 435.61,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -233,7 +233,7 @@
           "category": "SERVICIOS FERIALES",
           "provider": "Conco Anton F224 carretilla",
           "concept": "",
-          "totalAmount": 129.16666666666666,
+          "totalAmount": 129.17,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -255,7 +255,7 @@
           "category": "CARPINTERIA",
           "provider": "Dayjo F763 ida",
           "concept": "",
-          "totalAmount": 251.66666666666666,
+          "totalAmount": 251.67,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -266,7 +266,7 @@
           "category": "TRANSPORTE",
           "provider": "Dayjo F846 retornos",
           "concept": "",
-          "totalAmount": 483.3333333333333,
+          "totalAmount": 483.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -277,7 +277,7 @@
           "category": "CARPINTERIA",
           "provider": "Diego Suarez F8",
           "concept": "",
-          "totalAmount": 943.3333333333334,
+          "totalAmount": 943.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -288,7 +288,7 @@
           "category": "CARPINTERIA",
           "provider": "EcoHastial F7",
           "concept": "",
-          "totalAmount": 434.5333333333333,
+          "totalAmount": 434.53,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -321,7 +321,7 @@
           "category": "CARPINTERIA",
           "provider": "Franco Castillo F49",
           "concept": "",
-          "totalAmount": 458.3333333333333,
+          "totalAmount": 458.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -332,7 +332,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Froiz F213 compra",
           "concept": "",
-          "totalAmount": 44.626666666666665,
+          "totalAmount": 44.63,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -354,7 +354,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Hotel Limehome Olalla F1753",
           "concept": "",
-          "totalAmount": 202.72666666666666,
+          "totalAmount": 202.73,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -530,7 +530,7 @@
           "category": "CARPINTERIA",
           "provider": "Narciso Carvajal F8",
           "concept": "",
-          "totalAmount": 458.3333333333333,
+          "totalAmount": 458.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -585,7 +585,7 @@
           "category": "MATERIAL",
           "provider": "Tomifer F116 varios",
           "concept": "",
-          "totalAmount": 18.013333333333332,
+          "totalAmount": 18.01,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -596,7 +596,7 @@
           "category": "TRANSPORTE",
           "provider": "Ttes DiazVillar F377 ida",
           "concept": "",
-          "totalAmount": 283.3333333333333,
+          "totalAmount": 283.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -607,7 +607,7 @@
           "category": "CARPINTERIA",
           "provider": "Ultranza F18",
           "concept": "",
-          "totalAmount": 1506.6666666666667,
+          "totalAmount": 1506.67,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -618,7 +618,7 @@
           "category": "CARPINTERIA",
           "provider": "Workout F2150 montaje",
           "concept": "",
-          "totalAmount": 183.60666666666668,
+          "totalAmount": 183.61,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -629,7 +629,7 @@
           "category": "CARPINTERIA",
           "provider": "Workout F2436 desmontaje",
           "concept": "",
-          "totalAmount": 112.16333333333334,
+          "totalAmount": 112.16,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -640,7 +640,7 @@
           "category": "MATERIAL",
           "provider": "Wurth F4733648701 tornilleria",
           "concept": "",
-          "totalAmount": 78.39666666666666,
+          "totalAmount": 78.4,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -664,10 +664,10 @@
           "category": "GASTOS VIAJE",
           "provider": "Air Europa F1269821",
           "concept": "",
-          "totalAmount": 44.666666666666664,
+          "totalAmount": 44.67,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 44.666666666666664
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 44.67
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -690,10 +690,10 @@
           "category": "GASTOS VIAJE",
           "provider": "Comidas con factura",
           "concept": "",
-          "totalAmount": 193.34666666666666,
+          "totalAmount": 193.35,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 193.34666666666666
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 193.35
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -703,10 +703,10 @@
           "category": "GASTOS VIAJE",
           "provider": "Compostela Suites desmontaje F4405+F4406",
           "concept": "",
-          "totalAmount": 163.78333333333333,
+          "totalAmount": 163.78,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 163.78333333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 163.78
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -716,10 +716,10 @@
           "category": "GASTOS VIAJE",
           "provider": "Compostela Suites montaje F4053",
           "concept": "",
-          "totalAmount": 435.6133333333333,
+          "totalAmount": 435.61,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 435.6133333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 435.61
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -729,10 +729,10 @@
           "category": "SERVICIOS FERIALES",
           "provider": "Conco Anton F224 carretilla",
           "concept": "",
-          "totalAmount": 129.16666666666666,
+          "totalAmount": 129.17,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 129.16666666666666
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 129.17
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -755,10 +755,10 @@
           "category": "grafica",
           "provider": "Dayjo F763 ida",
           "concept": "",
-          "totalAmount": 251.66666666666666,
+          "totalAmount": 251.67,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 251.66666666666666
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 251.67
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -768,10 +768,10 @@
           "category": "TRANSPORTE",
           "provider": "Dayjo F846 retornos",
           "concept": "",
-          "totalAmount": 483.3333333333333,
+          "totalAmount": 483.33,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 483.3333333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 483.33
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -781,10 +781,10 @@
           "category": "CARPINTERIA",
           "provider": "Diego Suarez F8",
           "concept": "",
-          "totalAmount": 943.3333333333334,
+          "totalAmount": 943.33,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 943.3333333333334
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 943.33
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -807,10 +807,10 @@
           "category": "CARPINTERIA",
           "provider": "EcoHastial F7",
           "concept": "",
-          "totalAmount": 434.5333333333333,
+          "totalAmount": 434.53,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 434.5333333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 434.53
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -833,10 +833,10 @@
           "category": "CARPINTERIA",
           "provider": "Franco Castillo F49",
           "concept": "",
-          "totalAmount": 458.3333333333333,
+          "totalAmount": 458.33,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 458.3333333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 458.33
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -846,10 +846,10 @@
           "category": "GASTOS VIAJE",
           "provider": "Froiz F213 compra",
           "concept": "",
-          "totalAmount": 44.626666666666665,
+          "totalAmount": 44.63,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 44.626666666666665
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 44.63
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -872,10 +872,10 @@
           "category": "GASTOS VIAJE",
           "provider": "Hotel Limehome Olalla F1753",
           "concept": "",
-          "totalAmount": 202.72666666666666,
+          "totalAmount": 202.73,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 202.72666666666666
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 202.73
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -950,10 +950,10 @@
           "category": "CARPINTERIA",
           "provider": "Narciso Carvajal F8",
           "concept": "",
-          "totalAmount": 458.3333333333333,
+          "totalAmount": 458.33,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 458.3333333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 458.33
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -989,10 +989,10 @@
           "category": "MATERIAL",
           "provider": "Tomifer F116 varios",
           "concept": "",
-          "totalAmount": 18.013333333333332,
+          "totalAmount": 18.01,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 18.013333333333332
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 18.01
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -1002,10 +1002,10 @@
           "category": "TRANSPORTE",
           "provider": "Ttes DiazVillar F377 ida",
           "concept": "",
-          "totalAmount": 283.3333333333333,
+          "totalAmount": 283.33,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 283.3333333333333
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 283.33
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -1015,10 +1015,10 @@
           "category": "CARPINTERIA",
           "provider": "Ultranza F18",
           "concept": "",
-          "totalAmount": 1506.6666666666667,
+          "totalAmount": 1506.67,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 1506.6666666666667
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 1506.67
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -1028,10 +1028,10 @@
           "category": "CARPINTERIA",
           "provider": "Workout F2150 montaje",
           "concept": "",
-          "totalAmount": 183.60666666666668,
+          "totalAmount": 183.61,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 183.60666666666668
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 183.61
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -1041,10 +1041,10 @@
           "category": "CARPINTERIA",
           "provider": "Workout F2436 desmontaje",
           "concept": "",
-          "totalAmount": 112.16333333333334,
+          "totalAmount": 112.16,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 112.16333333333334
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 112.16
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -1054,10 +1054,10 @@
           "category": "MATERIAL",
           "provider": "Wurth F4733648701 tornilleria",
           "concept": "",
-          "totalAmount": 78.39666666666666,
+          "totalAmount": 78.4,
           "date": "2026-01-01",
           "distribution": {
-            "FARM-FRITES---WORLD-WIDE-1768913087302": 78.39666666666666
+            "FARM-FRITES---WORLD-WIDE-1768913087302": 78.4
           },
           "distributionMode": "MANUAL",
           "createdAt": "2026-01-20T12:44:47.000Z"
@@ -1078,7 +1078,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Air Europa F1269821",
           "concept": "",
-          "totalAmount": 44.666666666666664,
+          "totalAmount": 44.67,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1089,7 +1089,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Comidas con factura",
           "concept": "",
-          "totalAmount": 193.34666666666666,
+          "totalAmount": 193.35,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1100,7 +1100,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Compostela Suites desmontaje F4405+F4406",
           "concept": "",
-          "totalAmount": 163.78333333333333,
+          "totalAmount": 163.78,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1111,7 +1111,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Compostela Suites montaje F4053",
           "concept": "",
-          "totalAmount": 435.6133333333333,
+          "totalAmount": 435.61,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1122,7 +1122,7 @@
           "category": "SERVICIOS FERIALES",
           "provider": "Conco Anton F224 carretilla",
           "concept": "",
-          "totalAmount": 129.16666666666666,
+          "totalAmount": 129.17,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1144,7 +1144,7 @@
           "category": "COMPRA",
           "provider": "Dayjo F763 ida",
           "concept": "",
-          "totalAmount": 251.66666666666666,
+          "totalAmount": 251.67,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1155,7 +1155,7 @@
           "category": "TRANSPORTE",
           "provider": "Dayjo F846 retornos",
           "concept": "",
-          "totalAmount": 483.3333333333333,
+          "totalAmount": 483.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1166,7 +1166,7 @@
           "category": "CARPINTERIA",
           "provider": "Diego Suarez F8",
           "concept": "",
-          "totalAmount": 943.3333333333334,
+          "totalAmount": 943.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1177,7 +1177,7 @@
           "category": "CARPINTERIA",
           "provider": "EcoHastial F7",
           "concept": "",
-          "totalAmount": 434.5333333333333,
+          "totalAmount": 434.53,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1188,7 +1188,7 @@
           "category": "CARPINTERIA",
           "provider": "Franco Castillo F49",
           "concept": "",
-          "totalAmount": 458.3333333333333,
+          "totalAmount": 458.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1199,7 +1199,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Froiz F213 compra",
           "concept": "",
-          "totalAmount": 44.626666666666665,
+          "totalAmount": 44.63,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1221,7 +1221,7 @@
           "category": "GASTOS VIAJE",
           "provider": "Hotel Limehome Olalla F1753",
           "concept": "",
-          "totalAmount": 202.72666666666666,
+          "totalAmount": 202.73,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1320,7 +1320,7 @@
           "category": "CARPINTERIA",
           "provider": "Narciso Carvajal F8",
           "concept": "",
-          "totalAmount": 458.3333333333333,
+          "totalAmount": 458.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1364,7 +1364,7 @@
           "category": "MATERIAL",
           "provider": "Tomifer F116 varios",
           "concept": "",
-          "totalAmount": 18.013333333333332,
+          "totalAmount": 18.01,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1375,7 +1375,7 @@
           "category": "TRANSPORTE",
           "provider": "Ttes DiazVillar F377 ida",
           "concept": "",
-          "totalAmount": 283.3333333333333,
+          "totalAmount": 283.33,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1386,7 +1386,7 @@
           "category": "CARPINTERIA",
           "provider": "Ultranza F18",
           "concept": "",
-          "totalAmount": 1506.6666666666667,
+          "totalAmount": 1506.67,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1397,7 +1397,7 @@
           "category": "CARPINTERIA",
           "provider": "Workout F2150 montaje",
           "concept": "",
-          "totalAmount": 183.60666666666668,
+          "totalAmount": 183.61,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1408,7 +1408,7 @@
           "category": "CARPINTERIA",
           "provider": "Workout F2436 desmontaje",
           "concept": "",
-          "totalAmount": 112.16333333333334,
+          "totalAmount": 112.16,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1419,7 +1419,7 @@
           "category": "MATERIAL",
           "provider": "Wurth F4733648701 tornilleria",
           "concept": "",
-          "totalAmount": 78.39666666666666,
+          "totalAmount": 78.4,
           "date": "2026-01-01",
           "distribution": {},
           "distributionMode": "MANUAL",
@@ -1554,12 +1554,12 @@
               {
                 "category": "GASTOS GG",
                 "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 429.47999999999996
+                "estimated": 429.48
               },
               {
                 "category": "GASTOS GG",
                 "description": "GG (7% resto gastos)",
-                "estimated": 1002.1200000000001
+                "estimated": 1002.12
               }
             ]
           },
@@ -1686,12 +1686,12 @@
               {
                 "category": "GASTOS GG",
                 "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 432.47999999999996
+                "estimated": 432.48
               },
               {
                 "category": "GASTOS GG",
                 "description": "GG (7% resto gastos)",
-                "estimated": 1009.1200000000001
+                "estimated": 1009.12
               }
             ]
           },
@@ -1827,12 +1827,12 @@
               {
                 "category": "GASTOS GG",
                 "description": "IMPREVISTOS (3% resto gastos)",
-                "estimated": 432.47999999999996
+                "estimated": 432.48
               },
               {
                 "category": "GASTOS GG",
                 "description": "GG (7% resto gastos)",
-                "estimated": 1009.1200000000001
+                "estimated": 1009.12
               }
             ]
           },
