@@ -8,7 +8,14 @@ const BLOB_PATH = 'database_v1.json'; // Changed to force fresh start
 
 // Simple function to fetch data from a URL
 async function fetchJSON(url: string) {
-    const res = await fetch(url, { cache: 'no-store' }); // Ensure fresh data
+    const res = await fetch(url, {
+        cache: 'no-store',
+        headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+        }
+    });
     if (!res.ok) throw new Error('Failed to fetch DB from Blob');
     return res.json();
 }

@@ -222,9 +222,9 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
             {/* HEADER */}
             <div className="flex-none px-6 py-4 border-b border-gray-100 flex justify-between items-center bg-white z-50">
                 <div className="flex items-center gap-6">
-                    <Link href="/" className="text-brand-grey hover:text-brand-black transition-colors">
+                    <a href="/" className="text-brand-grey hover:text-brand-black transition-colors">
                         <ArrowLeft size={24} />
-                    </Link>
+                    </a>
                     <div>
                         <h1 className="text-xl font-black uppercase tracking-tight text-brand-black">{initialFair.name}</h1>
                     </div>
