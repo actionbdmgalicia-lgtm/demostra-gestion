@@ -51,6 +51,7 @@ export default function BudgetComparison() {
     const clients = useMemo(() => currentFair?.clients || [], [currentFair]);
 
     // Calculate Data
+    // Calculate Data
     const comparisonData = useMemo(() => {
         if (!currentFair) return { rows: [], totals: { budget: 0, real: 0, earnedValue: 0, margin: 0 } };
 
@@ -60,28 +61,62 @@ export default function BudgetComparison() {
             : clients.filter((c: any) => c.id === selectedClientId);
 
         STANDARD_CATEGORIES.forEach(cat => {
+            const isSales = cat === 'VENTA';
             let budgetTotal = 0;
+            let realTotal = 0;
+
             activeClients.forEach((c: any) => {
-                const catBudget = c.budget?.expenses
-                    ?.filter((e: any) => e.category === cat)
-                    .reduce((sum: number, item: any) => sum + (item.estimated || 0), 0) || 0;
-                budgetTotal += catBudget;
+                // BUDGET
+                if (isSales) {
+                    // For Sales, sum income
+                    const catIncome = c.budget?.income
+                        ?.reduce((sum: number, item: any) => sum + (item.amount || 0), 0) || 0;
+                    budgetTotal += catIncome;
+                } else {
+                    // For Expenses, sum expenses
+                    const catBudget = c.budget?.expenses
+                        ?.filter((e: any) => e.category === cat)
+                        .reduce((sum: number, item: any) => sum + (item.estimated || 0), 0) || 0;
+                    budgetTotal += catBudget;
+                }
             });
 
-            let realTotal = 0;
-            const catExpenses = realExpenses.filter((e: any) => e.category === cat);
+            // REAL
+            const catExpenses = realExpenses.filter((e: any) => {
+                if (isSales) return e.type === 'INCOME';
+                return (!e.type || e.type === 'EXPENSE') && e.category === cat;
+            });
+
             catExpenses.forEach((exp: any) => {
                 if (exp.distribution) {
                     activeClients.forEach((c: any) => {
                         realTotal += (exp.distribution[c.id] || 0);
                     });
+                } else {
+                    // Fallback if no distribution but client filter is ALL
+                    if (selectedClientId === 'ALL') realTotal += (exp.totalAmount || 0);
                 }
             });
 
             if (budgetTotal > 0 || realTotal > 0) {
                 const pct = executionPcts[cat] !== undefined ? executionPcts[cat] : 100;
-                const earnedValue = budgetTotal * (pct / 100);
-                const margin = earnedValue - realTotal;
+                let earnedValue = 0;
+                let margin = 0;
+
+                if (isSales) {
+                    // Sales Logic
+                    // Earned Value = Budget * Pct? Maybe 'Forecast'? 
+                    // Let's keep it simple: Earned = Real basically in P&L, but here we track specific execution.
+                    // For Sales, Deviation (Margin) = Real - Budget (Positive is good)
+                    margin = realTotal - budgetTotal;
+                    earnedValue = budgetTotal; // KPI for sales usually is target.
+                } else {
+                    // Expense Logic
+                    // Earned Value = Budget * Pct (Work Done Value)
+                    // Margin = Earned - Real (Positive is good/savings)
+                    earnedValue = budgetTotal * (pct / 100);
+                    margin = earnedValue - realTotal;
+                }
 
                 data.push({
                     category: cat,
@@ -89,18 +124,27 @@ export default function BudgetComparison() {
                     real: realTotal,
                     pct,
                     earnedValue,
-                    margin
+                    margin,
+                    isSales
                 });
             }
         });
 
-        // Add Totals Row
-        const totals = data.reduce((acc, row) => ({
-            budget: acc.budget + row.budget,
-            real: acc.real + row.real,
-            earnedValue: acc.earnedValue + row.earnedValue,
-            margin: acc.margin + row.margin
-        }), { budget: 0, real: 0, earnedValue: 0, margin: 0 });
+        // Totals (Profit Calculation)
+        // Profit = Total Sales - Total Expenses
+        const salesRow = data.find(d => d.isSales) || { budget: 0, real: 0, margin: 0 };
+        const expenseRows = data.filter(d => !d.isSales);
+
+        const totalExpenseBudget = expenseRows.reduce((sum, r) => sum + r.budget, 0);
+        const totalExpenseReal = expenseRows.reduce((sum, r) => sum + r.real, 0);
+        // const totalExpenseMargin = expenseRows.reduce((sum, r) => sum + r.margin, 0);
+
+        const totals = {
+            budget: salesRow.budget - totalExpenseBudget, // Projected Profit
+            real: salesRow.real - totalExpenseReal,       // Real Profit
+            earnedValue: 0, // Not really applicable for Net Profit mixing types
+            margin: (salesRow.real - totalExpenseReal) - (salesRow.budget - totalExpenseBudget) // Profit Deviation
+        };
 
         return { rows: data, totals };
     }, [currentFair, selectedClientId, clients, realExpenses, executionPcts]);
