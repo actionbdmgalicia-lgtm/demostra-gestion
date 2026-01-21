@@ -37,7 +37,11 @@ export async function getDB() {
                 console.log('Database not found on Blob. Seeding new DB...');
                 const dataToUpload = JSON.stringify(initialData, null, 2);
                 try {
-                    await put(BLOB_PATH, dataToUpload, { access: 'public', addRandomSuffix: false });
+                    await put(BLOB_PATH, dataToUpload, {
+                        access: 'public',
+                        addRandomSuffix: false,
+                        cacheControlMaxAge: 0
+                    });
                 } catch (e) {
                     console.error("Failed to seed blob:", e);
                 }
@@ -65,8 +69,12 @@ export async function getDB() {
 export async function saveDB(data: any) {
     if (process.env.BLOB_READ_WRITE_TOKEN) {
         try {
-            // Save to Blob
-            await put(BLOB_PATH, JSON.stringify(data, null, 2), { access: 'public', addRandomSuffix: false });
+            // Save to Blob with NO CACHE to ensure immediate consistency
+            await put(BLOB_PATH, JSON.stringify(data, null, 2), {
+                access: 'public',
+                addRandomSuffix: false,
+                cacheControlMaxAge: 0 // Vital: Disable CDN caching
+            });
         } catch (error) {
             console.error("Error saving to Vercel Blob:", error);
             throw new Error("Failed to save database to Blob");
