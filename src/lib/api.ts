@@ -26,14 +26,21 @@ export async function getDB() {
             if (blob) {
                 // Add timestamp to query to force bypass of any edge caching
                 const urlWithCacheBust = `${blob.url}?t=${Date.now()}`;
-                return await fetchJSON(urlWithCacheBust);
+                const data = await fetchJSON(urlWithCacheBust);
+                // Basic validation to ensure it's not empty
+                if (!data || !data.fairs) return initialData;
+                return data;
             } else {
                 // Not found on Blob.
-                // Critical Safety Check: Only seed if we are SURE it's missing.
-                // We return initialData to allow the app to render, but we DO NOT auto-save it here.
-                // This prevents overwriting a hidden/missed DB with the seed.
-                // The DB will only be created when the user explicitly saves something (create fair/save client).
-                console.log('Database not found on Blob (List returned empty). returning volatile initialData.');
+                // We MUST seed it, otherwise we have no persistent storage file to write to later (or read from).
+                // If we don't seed, we are in 'volatile mode' where every read resets to initialData.
+                console.log('Database not found on Blob. Seeding new DB...');
+                const dataToUpload = JSON.stringify(initialData, null, 2);
+                try {
+                    await put(BLOB_PATH, dataToUpload, { access: 'public', addRandomSuffix: false });
+                } catch (e) {
+                    console.error("Failed to seed blob:", e);
+                }
                 return initialData;
             }
         } catch (error) {
