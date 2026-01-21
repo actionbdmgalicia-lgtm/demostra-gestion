@@ -17,3 +17,8 @@ export async function getAllFairsAndClients() {
         }))
     }));
 }
+
+export async function getFullBackupData() {
+    const db = await getDB();
+    return db.fairs;
+}

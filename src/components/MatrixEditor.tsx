@@ -58,6 +58,13 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
     const [selectedClientId, setSelectedClientId] = useState('');
     const [newRowData, setNewRowData] = useState({ type: 'GASTO', category: '', description: '' });
 
+    // Sync state with props when fair updates (e.g. after save)
+    useEffect(() => {
+        if (initialFair.clients) {
+            setClients(initialFair.clients);
+        }
+    }, [initialFair]);
+
     useEffect(() => {
         if (modalMode === 'ADD_CLIENT' && allFairs.length === 0) {
             getAllFairsAndClients().then(setAllFairs);

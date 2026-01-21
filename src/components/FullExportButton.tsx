@@ -3,8 +3,7 @@
 import React, { useState } from 'react';
 import * as XLSX from 'xlsx';
 import { Download, Loader2 } from 'lucide-react';
-import { getAllFairsAndClients } from '@/app/actions_data';
-import { getFairExpenses } from '@/app/actions_expenses';
+import { getFullBackupData } from '@/app/actions_data';
 
 export default function FullExportButton() {
     const [loading, setLoading] = useState(false);
@@ -12,30 +11,13 @@ export default function FullExportButton() {
     const handleExportAll = async () => {
         setLoading(true);
         try {
-            // 1. Fetch all fairs
-            const fairs = await getAllFairsAndClients();
+            // 1. Fetch all fairs with FULL DATA
+            const fairs = await getFullBackupData();
 
             const wb = XLSX.utils.book_new();
-
-            // 2. Iterate each fair to create a sheet or fetch expenses
-            // The user wants "TODAS las ferias (en un unico EXCEL, TODOS los Gastos"
-            // Let's create one big sheet or one sheet per fair?
-            // "descargar un fichero unico con: Todas las ferias ... TODOS los Gastos"
-            // Usually means a consolidated list of expenses.
-
             const allExpenses: any[] = [];
 
             for (const fair of fairs) {
-                // Fetch expenses for this fair
-                // Note: getAllFairsAndClients might not return realExpenses depending on implementation, 
-                // but usually it returns clients. Structure check:
-                // actions_data.ts returns "db.fairs" (so it includes realExpenses).
-
-                // Let's rely on getAllFairsAndClients returning the full DB object effectively for fairs.
-                // But better to be safe, get expenses explicitly or check if they are in fair object.
-                // Based on previous reads, db.json structure has `realExpenses` inside fair.
-                // So fairs variable likely has them.
-
                 const expenses = fair.realExpenses || [];
 
                 expenses.forEach((exp: any) => {
@@ -47,8 +29,8 @@ export default function FullExportButton() {
                         'Partida': exp.category,
                         'Importe Total': exp.totalAmount,
                         'Modo Distribución': exp.distributionMode,
-                        // Add client distribution details?
-                        // If it's "TODOS los Gastos", raw list is best.
+                        // To add distribution details, we would need to map client IDs to names.
+                        // For now, raw export is good.
                     });
                 });
             }
