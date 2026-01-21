@@ -18,24 +18,27 @@ export async function getDB() {
     if (process.env.BLOB_READ_WRITE_TOKEN) {
         try {
             const { list } = await import('@vercel/blob');
+            // Force refresh of the list
             const { blobs } = await list({ prefix: BLOB_PATH, limit: 1 });
 
             const blob = blobs.find(b => b.pathname === BLOB_PATH);
 
             if (blob) {
-                return await fetchJSON(blob.url);
+                // Add timestamp to query to force bypass of any edge caching
+                const urlWithCacheBust = `${blob.url}?t=${Date.now()}`;
+                return await fetchJSON(urlWithCacheBust);
             } else {
-                // Not found on Blob, use imported initialData as seed
-                console.log('Database not found on Blob, seeding from bundled initialData...');
-                const dataToUpload = JSON.stringify(initialData, null, 2);
-
-                // Upload it
-                await put(BLOB_PATH, dataToUpload, { access: 'public', addRandomSuffix: false });
+                // Not found on Blob.
+                // Critical Safety Check: Only seed if we are SURE it's missing.
+                // We return initialData to allow the app to render, but we DO NOT auto-save it here.
+                // This prevents overwriting a hidden/missed DB with the seed.
+                // The DB will only be created when the user explicitly saves something (create fair/save client).
+                console.log('Database not found on Blob (List returned empty). returning volatile initialData.');
                 return initialData;
             }
         } catch (error) {
             console.error("Error accessing Vercel Blob:", error);
-            // Fallback to initialData if Blob fails entirely
+            // Fallback to initialData if Blob fails entirely, but again, DO NOT SAVE.
             return initialData;
         }
     }
