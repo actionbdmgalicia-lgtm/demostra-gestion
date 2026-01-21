@@ -20,45 +20,37 @@ async function fetchJSON(url: string) {
     return res.json();
 }
 
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 export async function getDB() {
     // Check if we are in production or have the token to use Blob
     if (process.env.BLOB_READ_WRITE_TOKEN) {
-        try {
-            const { list } = await import('@vercel/blob');
-            // Force refresh of the list
-            const { blobs } = await list({ prefix: BLOB_PATH, limit: 1 });
+        let retries = 3;
+        while (retries > 0) {
+            try {
+                const { list } = await import('@vercel/blob');
+                const { blobs } = await list({ prefix: BLOB_PATH, limit: 1 });
+                const blob = blobs.find(b => b.pathname === BLOB_PATH);
 
-            const blob = blobs.find(b => b.pathname === BLOB_PATH);
-
-            if (blob) {
-                // Add timestamp to query to force bypass of any edge caching
-                const urlWithCacheBust = `${blob.url}?t=${Date.now()}`;
-                const data = await fetchJSON(urlWithCacheBust);
-                // Basic validation to ensure it's not empty
-                if (!data || !data.fairs) return initialData;
-                return data;
-            } else {
-                // Not found on Blob.
-                // We MUST seed it, otherwise we have no persistent storage file to write to later (or read from).
-                // If we don't seed, we are in 'volatile mode' where every read resets to initialData.
-                console.log('Database not found on Blob. Seeding new DB...');
-                const dataToUpload = JSON.stringify(initialData, null, 2);
-                try {
-                    await put(BLOB_PATH, dataToUpload, {
-                        access: 'public',
-                        addRandomSuffix: false,
-                        cacheControlMaxAge: 0
-                    });
-                } catch (e) {
-                    console.error("Failed to seed blob:", e);
+                if (blob) {
+                    const urlWithCacheBust = `${blob.url}?t=${Date.now()}`;
+                    const data = await fetchJSON(urlWithCacheBust);
+                    if (data && data.fairs) return data;
+                } else {
+                    console.warn(`Blob ${BLOB_PATH} not found in list. Retries left: ${retries}`);
                 }
-                return initialData;
+            } catch (error) {
+                console.error(`Error attempting to get DB (Retry ${retries}):`, error);
             }
-        } catch (error) {
-            console.error("Error accessing Vercel Blob:", error);
-            // Fallback to initialData if Blob fails entirely, but again, DO NOT SAVE.
-            return initialData;
+
+            retries--;
+            if (retries > 0) await delay(500);
         }
+
+        // If we failed after retries, try ONE seed attempt if list returned empty, 
+        // OR throw error to be safe.
+        // Given user issues, let's THROW to force visibility of the error instead of silent data loss.
+        throw new Error("CRITICAL: Unable to load Database from Storage. Please refresh.");
     }
 
     // Fallback: Local Filesystem (Dev mode)
