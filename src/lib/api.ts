@@ -4,7 +4,7 @@ import { put } from '@vercel/blob';
 import initialData from '@/data/db.json'; // Direct import to ensure bundling
 
 const DB_PATH = path.join(process.cwd(), 'src/data/db.json');
-const BLOB_PATH = 'db.json';
+const BLOB_PATH = 'database_v1.json'; // Changed to force fresh start
 
 // Simple function to fetch data from a URL
 async function fetchJSON(url: string) {
