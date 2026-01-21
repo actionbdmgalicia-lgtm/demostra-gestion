@@ -10,6 +10,9 @@ export async function createFair(formData: FormData) {
 
     if (!name) return;
 
+    // Determine the ID we will redirect to
+    let targetId = '';
+
     try {
         const db = await getDB();
 
@@ -17,62 +20,51 @@ export async function createFair(formData: FormData) {
         if (!db.fairs) db.fairs = [];
 
         const newId = name.replace(/\s+/g, '-').toUpperCase() + '-' + new Date().getFullYear();
+        targetId = newId;
 
-        // Base structure
-        let newFair: any = {
-            id: '',
-            name: '',
-            status: 'Active',
-            date: new Date().toISOString().split('T')[0],
-            clients: []
-        };
+        // Check if exists
+        const existingFair = db.fairs.find((f: any) => f.id === newId);
 
-        try {
-            const db = await getDB();
+        if (!existingFair) {
+            // Create new fair
+            const newFair: any = {
+                id: newId,
+                name,
+                status: 'Active',
+                date: new Date().toISOString().split('T')[0],
+                clients: []
+            };
 
-            // Ensure fairs array exists
-            if (!db.fairs) db.fairs = [];
-
-            const newId = name.replace(/\s+/g, '-').toUpperCase() + '-' + new Date().getFullYear();
-
-            // Check if exists
-            if (db.fairs.find((f: any) => f.id === newId)) {
-                // If it exists, we just want to go there.
-                // We can return the ID to redirect outside, or throw a specific error, 
-                // but simpler: just set the ID and don't push.
-                newFair.id = newId;
-                // Do NOT push.
-            } else {
-                newFair.id = newId;
-                newFair.name = name; // Update name just in case
-
-                // Logic to Clone from existing fair
-                if (sourceFairId && sourceFairId !== 'none') {
-                    const sourceFair = db.fairs.find((f: any) => f.id === sourceFairId);
-                    if (sourceFair) {
-                        // Deep clone clients and generate new IDs to avoid conflicts
-                        const clonedClients = sourceFair.clients.map((client: any) => ({
-                            ...client,
-                            id: `${client.name.replace(/\s+/g, '-').toUpperCase()}-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
-                            // Keep budget/costs data
-                            budget: JSON.parse(JSON.stringify(client.budget))
-                        }));
-                        newFair.clients = clonedClients;
-                    }
+            // Logic to Clone from existing fair
+            if (sourceFairId && sourceFairId !== 'none') {
+                const sourceFair = db.fairs.find((f: any) => f.id === sourceFairId);
+                if (sourceFair) {
+                    // Deep clone clients and generate new IDs to avoid conflicts
+                    const clonedClients = sourceFair.clients.map((client: any) => ({
+                        ...client,
+                        id: `${client.name.replace(/\s+/g, '-').toUpperCase()}-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+                        // Keep budget/costs data
+                        budget: JSON.parse(JSON.stringify(client.budget))
+                    }));
+                    newFair.clients = clonedClients;
                 }
-
-                db.fairs.push(newFair);
-                await saveDB(db);
-                revalidatePath('/');
             }
 
-        } catch (error) {
-            console.error("Error creating fair:", error);
-            // If it's a critical error, we might want to return it to the form (if this was useFormState),
-            // but since it's a server action called via valid form action, we throw.
-            throw new Error("Failed to create fair");
+            db.fairs.push(newFair);
+            await saveDB(db);
+            revalidatePath('/');
         }
+        // If existingFair found, we just redirect to it (targetId is set)
 
-        // Redirect after success (outside try/catch)
-        redirect(`/ferias/${newFair.id}`);
+    } catch (error) {
+        console.error("Error creating fair:", error);
+        // We throw so the server action reports failure (Error: Failed to create fair)
+        // But we avoid "NEXT_REDIRECT" issues because we don't redirect here.
+        throw new Error("Failed to create fair");
     }
+
+    // Redirect MUST be outside try/catch
+    if (targetId) {
+        redirect(`/ferias/${targetId}`);
+    }
+}
