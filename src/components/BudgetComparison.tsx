@@ -119,7 +119,6 @@ export default function BudgetComparison() {
     };
 
     const handleExport = () => {
-        // ... (existing export logic remains the same, simplified for brevity in this edit plan but implies full replacement if not careful, I will keep function body intact in real apply)
         const wb = XLSX.utils.book_new();
         const exportData: any[] = [];
 
@@ -128,6 +127,7 @@ export default function BudgetComparison() {
 
         // Rows
         comparisonData.rows.forEach(row => {
+            // Summary Row
             exportData.push([
                 row.category,
                 row.budget,
@@ -137,6 +137,38 @@ export default function BudgetComparison() {
                 row.real,
                 row.margin
             ]);
+
+            // Detail Rows
+            const details = getCategoryExpenses(row.category);
+            if (details.length > 0) {
+                // Sub-header for details (optional, or just indent)
+                // exportData.push(['', 'Fecha', 'Proveedor', 'Concepto', 'Importe', '', '']);
+
+                details.forEach((exp: any) => {
+                    let amount = 0;
+                    if (selectedClientId === 'ALL') {
+                        if (exp.distribution) {
+                            Object.values(exp.distribution).forEach((v: any) => amount += (typeof v === 'number' ? v : 0));
+                        } else {
+                            amount = exp.totalAmount;
+                        }
+                    } else {
+                        amount = exp.distribution?.[selectedClientId] || 0;
+                    }
+
+                    if (amount !== 0) {
+                        exportData.push([
+                            `    ${exp.provider} - ${exp.concept} (${exp.date})`, // Indented Description
+                            '', // Budget empty
+                            '', // Pct empty
+                            '', // Earned empty
+                            amount, // Real Cost
+                            amount, // Imputed
+                            ''  // Margin empty
+                        ]);
+                    }
+                });
+            }
         });
 
         // Totals

@@ -1,7 +1,7 @@
-
 import { getFairs } from '@/lib/api';
 import { createFair } from '@/app/actions_home';
-import FairList from '@/components/FairList'; // New client component for filtering
+import FairList from '@/components/FairList';
+import FullExportButton from '@/components/FullExportButton';
 import { Plus, Copy, LayoutGrid, TrendingUp } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
@@ -22,6 +22,7 @@ export default async function Home() {
         </div>
 
         <div className="flex gap-4">
+          <FullExportButton />
           <a href="/gastos" className="btn-secondary text-[10px] uppercase tracking-widest flex items-center gap-2 h-10 px-4">
             <Plus size={14} /> Imputar
           </a>
