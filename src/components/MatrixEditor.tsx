@@ -45,7 +45,10 @@ const CATEGORY_COLORS: { [key: string]: string } = {
     'DEFAULT': '#F3F4F6' // Gris suave por defecto
 };
 
+import { useRouter } from 'next/navigation';
+
 export default function MatrixEditor({ initialFair }: { initialFair: any }) {
+    const router = useRouter();
     const [clients, setClients] = useState<Client[]>(initialFair.clients || []);
     const [rows, setRows] = useState<Row[]>([]);
     const [saving, setSaving] = useState(false);
@@ -207,6 +210,8 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
 
         const finalClients = Array.from(activeClientsMap.values());
         await saveFairData(initialFair.id, finalClients);
+        // Force a router refresh to update server components and cache with new data
+        router.refresh();
         setSaving(false);
     };
 

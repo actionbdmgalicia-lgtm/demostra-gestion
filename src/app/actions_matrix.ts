@@ -18,6 +18,7 @@ export async function saveFairData(fairId: string, clients: any[]) {
 
         await saveDB(db);
         revalidatePath(`/ferias/${fairId}`);
+        revalidatePath('/'); // Update home page counters
         return { success: true };
     } catch (error) {
         console.error("Save error:", error);
