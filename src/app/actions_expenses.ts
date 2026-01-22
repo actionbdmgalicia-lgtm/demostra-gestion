@@ -12,19 +12,36 @@ export async function saveExpenseImputation(fairId: string, expenseData: any) {
             fair.realExpenses = [];
         }
 
-        // Add unique ID
-        const newExpense = {
-            ...expenseData,
-            id: expenseData.id || `EXP-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-            createdAt: new Date().toISOString()
-        };
+        const existingIndex = expenseData.id
+            ? fair.realExpenses.findIndex((e: any) => e.id === expenseData.id)
+            : -1;
 
-        fair.realExpenses.push(newExpense);
+        let savedExpense;
+
+        if (existingIndex >= 0) {
+            // Update existing
+            savedExpense = {
+                ...fair.realExpenses[existingIndex],
+                ...expenseData,
+                updatedAt: new Date().toISOString()
+            };
+            fair.realExpenses[existingIndex] = savedExpense;
+        } else {
+            // Create New
+            savedExpense = {
+                ...expenseData,
+                id: expenseData.id || `EXP-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+                createdAt: new Date().toISOString()
+            };
+            fair.realExpenses.push(savedExpense);
+        }
 
         await saveDB(db);
         revalidatePath('/gastos');
         revalidatePath('/informes');
-        return { success: true, expense: newExpense };
+        // We probably also need to revalidate the fair page
+        revalidatePath(`/ferias/${fairId}`);
+        return { success: true, expense: savedExpense };
     }
     return { success: false, error: 'Fair not found' };
 }

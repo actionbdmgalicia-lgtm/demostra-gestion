@@ -46,6 +46,7 @@ const CATEGORY_COLORS: { [key: string]: string } = {
 };
 
 import { useRouter } from 'next/navigation';
+import RealExpensesManager from './RealExpensesManager';
 
 export default function MatrixEditor({ initialFair }: { initialFair: any }) {
     const router = useRouter();
@@ -54,6 +55,9 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
     const [saving, setSaving] = useState(false);
     const [allFairs, setAllFairs] = useState<any[]>([]);
     const [modalMode, setModalMode] = useState<'NONE' | 'ADD_ROW' | 'ADD_CLIENT'>('NONE');
+
+    // View Mode
+    const [viewMode, setViewMode] = useState<'BUDGET' | 'REAL'>('BUDGET');
 
     // Inputs
     const [newClientName, setNewClientName] = useState('');
@@ -228,133 +232,159 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
                     <div>
                         <h1 className="text-xl font-black uppercase tracking-tight text-brand-black">{initialFair.name}</h1>
                     </div>
+                    {/* TOGGLE */}
+                    <div className="flex bg-gray-100 rounded-lg p-1 ml-4">
+                        <button
+                            onClick={() => setViewMode('BUDGET')}
+                            className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all ${viewMode === 'BUDGET' ? 'bg-white shadow text-brand-black' : 'text-gray-400 hover:text-gray-600'}`}
+                        >
+                            Presupuesto
+                        </button>
+                        <button
+                            onClick={() => setViewMode('REAL')}
+                            className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all ${viewMode === 'REAL' ? 'bg-white shadow text-brand-black' : 'text-gray-400 hover:text-gray-600'}`}
+                        >
+                            Movimientos
+                        </button>
+                    </div>
                 </div>
-                <div className="flex gap-3">
-                    <button className="btn-secondary text-xs h-10 uppercase tracking-widest flex items-center gap-2" onClick={() => setModalMode('ADD_ROW')}>
-                        <Plus size={14} /> Concepto
-                    </button>
-                    <button className="btn-primary h-10 text-xs uppercase tracking-widest flex items-center gap-2" onClick={handleSave} disabled={saving}>
-                        {saving ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
-                        {saving ? 'Guardando...' : 'Guardar'}
-                    </button>
-                </div>
+                {viewMode === 'BUDGET' && (
+                    <div className="flex gap-3">
+                        <button className="btn-secondary text-xs h-10 uppercase tracking-widest flex items-center gap-2" onClick={() => setModalMode('ADD_ROW')}>
+                            <Plus size={14} /> Concepto
+                        </button>
+                        <button className="btn-primary h-10 text-xs uppercase tracking-widest flex items-center gap-2" onClick={handleSave} disabled={saving}>
+                            {saving ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
+                            {saving ? 'Guardando...' : 'Guardar'}
+                        </button>
+                    </div>
+                )}
             </div>
 
-            {/* MATRIX TABLE */}
-            <div className="flex-grow overflow-auto bg-white relative pb-32">
-                <table className="w-full border-collapse text-left">
-                    <thead className="bg-white sticky top-0 z-40 shadow-sm border-b-2 border-brand-black">
-                        <tr>
-                            <th className="w-12 p-3 border-b text-xs text-center text-brand-grey bg-white">#</th>
-                            <th className="p-3 border-b border-r w-[200px] text-[10px] font-bold text-brand-black uppercase tracking-widest bg-gray-50">Categoría</th>
-                            <th className="p-3 border-b border-r w-[300px] text-[10px] font-bold text-brand-black uppercase tracking-widest bg-gray-50">Detalle</th>
-                            {clients.map(c => (
-                                <th key={c.id} className="min-w-[100px] p-2 border-b text-center relative group bg-white border-r last:border-0 border-dashed border-gray-200">
-                                    <div className="flex flex-col items-center justify-center">
-                                        <span className="text-sm font-bold text-brand-black block w-full truncate px-4 pb-1 uppercase tracking-tight" title={c.name}>{c.name}</span>
-                                        <button
-                                            onClick={() => handleDeleteClient(c.id)}
-                                            className="absolute right-1 top-1 text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all p-1"
-                                            title="Eliminar Cliente"
-                                        >
-                                            <Trash2 size={14} />
-                                        </button>
-                                    </div>
-                                </th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {categories.map((cat) => {
-                            const rowsInCat = groupedRows[cat];
-                            const catColor = getCategoryColor(cat);
-
-                            return (
-                                <React.Fragment key={cat}>
-                                    {/* Category Header / Total Row */}
-                                    <tr className="border-y border-brand-black/20">
-                                        <td style={{ backgroundColor: catColor }}></td>
-                                        <td style={{ backgroundColor: catColor }} className="p-2 text-xs font-bold uppercase tracking-wider text-black border-r border-black/5" colSpan={2}>{cat}</td>
-                                        {clients.map(c => {
-                                            const val = getCategoryTotal(cat, c.id);
-                                            return (
-                                                <td key={c.id} style={{ backgroundColor: catColor, position: 'relative', zIndex: 1 }} className="p-1.5 text-right text-sm font-bold border-r border-black/10 last:border-0 text-black font-mono">
-                                                    {val !== 0 ? val.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : ''}
-                                                </td>
-                                            )
-                                        })}
-                                    </tr>
-
-                                    {/* Detail Rows */}
-                                    {rowsInCat.map((row, i) => (
-                                        <tr key={row.id} className="hover:bg-gray-50 transition-colors border-b border-gray-50">
-                                            <td className="text-[10px] text-gray-300 text-center select-none py-1.5 pl-2">{i + 1}</td>
-                                            <td className="py-0 border-r border-gray-50">
-                                                <div className="text-[10px] text-gray-400 uppercase truncate px-2 font-medium tracking-wide">{row.category}</div>
-                                            </td>
-                                            <td className="py-0 border-r border-gray-50">
-                                                <input
-                                                    className="w-full bg-transparent p-1.5 outline-none text-sm text-gray-600 focus:text-brand-black focus:font-medium transition-all placeholder:text-gray-300"
-                                                    value={row.description}
-                                                    onChange={(e) => setRows(prev => prev.map(r => r.id === row.id ? { ...r, description: e.target.value } : r))}
-                                                />
-                                            </td>
-                                            {clients.map(c => (
-                                                <td key={c.id} className="py-0 border-r border-gray-50 last:border-0 relative">
-                                                    <input
-                                                        className={`w-full bg-transparent p-1.5 text-right outline-none text-sm font-mono ${parseFloat(row[c.id]) < 0 ? 'text-red-500 font-medium' : 'text-gray-900'}`}
-                                                        value={row[c.id] !== undefined ? row[c.id] : ''}
-                                                        onChange={(e) => handleCellChange(row.id, c.id, e.target.value)}
-                                                    />
-                                                </td>
-                                            ))}
-                                        </tr>
+            {/* CONTENT */}
+            {viewMode === 'BUDGET' ? (
+                <>
+                    {/* MATRIX TABLE */}
+                    <div className="flex-grow overflow-auto bg-white relative pb-32">
+                        <table className="w-full border-collapse text-left">
+                            <thead className="bg-white sticky top-0 z-40 shadow-sm border-b-2 border-brand-black">
+                                <tr>
+                                    <th className="w-12 p-3 border-b text-xs text-center text-brand-grey bg-white">#</th>
+                                    <th className="p-3 border-b border-r w-[200px] text-[10px] font-bold text-brand-black uppercase tracking-widest bg-gray-50">Categoría</th>
+                                    <th className="p-3 border-b border-r w-[300px] text-[10px] font-bold text-brand-black uppercase tracking-widest bg-gray-50">Detalle</th>
+                                    {clients.map(c => (
+                                        <th key={c.id} className="min-w-[100px] p-2 border-b text-center relative group bg-white border-r last:border-0 border-dashed border-gray-200">
+                                            <div className="flex flex-col items-center justify-center">
+                                                <span className="text-sm font-bold text-brand-black block w-full truncate px-4 pb-1 uppercase tracking-tight" title={c.name}>{c.name}</span>
+                                                <button
+                                                    onClick={() => handleDeleteClient(c.id)}
+                                                    className="absolute right-1 top-1 text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all p-1"
+                                                    title="Eliminar Cliente"
+                                                >
+                                                    <Trash2 size={14} />
+                                                </button>
+                                            </div>
+                                        </th>
                                     ))}
-                                </React.Fragment>
-                            )
-                        })}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {categories.map((cat) => {
+                                    const rowsInCat = groupedRows[cat];
+                                    const catColor = getCategoryColor(cat);
 
-                        {/* SUMMARY ROWS - High Contrast Footer */}
+                                    return (
+                                        <React.Fragment key={cat}>
+                                            {/* Category Header / Total Row */}
+                                            <tr className="border-y border-brand-black/20">
+                                                <td style={{ backgroundColor: catColor }}></td>
+                                                <td style={{ backgroundColor: catColor }} className="p-2 text-xs font-bold uppercase tracking-wider text-black border-r border-black/5" colSpan={2}>{cat}</td>
+                                                {clients.map(c => {
+                                                    const val = getCategoryTotal(cat, c.id);
+                                                    return (
+                                                        <td key={c.id} style={{ backgroundColor: catColor, position: 'relative', zIndex: 1 }} className="p-1.5 text-right text-sm font-bold border-r border-black/10 last:border-0 text-black font-mono">
+                                                            {val !== 0 ? val.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : ''}
+                                                        </td>
+                                                    )
+                                                })}
+                                            </tr>
 
-                        {/* TOTAL GASTOS ROW */}
-                        <tr className="border-t-2 border-brand-black bg-gray-100">
-                            <td colSpan={3} className="p-3 text-right font-bold text-brand-black text-xs uppercase tracking-widest border-r border-gray-200">TOTAL GASTOS</td>
-                            {clients.map(c => {
-                                const val = getTotalExpenses(c.id);
-                                return (
-                                    <td key={c.id} className="p-3 text-right font-bold text-red-500 font-mono text-sm border-r border-gray-300 last:border-0 bg-white">
-                                        {val.toLocaleString('es-ES', { minimumFractionDigits: 2 })}
-                                    </td>
-                                )
-                            })}
-                        </tr>
+                                            {/* Detail Rows */}
+                                            {rowsInCat.map((row, i) => (
+                                                <tr key={row.id} className="hover:bg-gray-50 transition-colors border-b border-gray-50">
+                                                    <td className="text-[10px] text-gray-300 text-center select-none py-1.5 pl-2">{i + 1}</td>
+                                                    <td className="py-0 border-r border-gray-50">
+                                                        <div className="text-[10px] text-gray-400 uppercase truncate px-2 font-medium tracking-wide">{row.category}</div>
+                                                    </td>
+                                                    <td className="py-0 border-r border-gray-50">
+                                                        <input
+                                                            className="w-full bg-transparent p-1.5 outline-none text-sm text-gray-600 focus:text-brand-black focus:font-medium transition-all placeholder:text-gray-300"
+                                                            value={row.description}
+                                                            onChange={(e) => setRows(prev => prev.map(r => r.id === row.id ? { ...r, description: e.target.value } : r))}
+                                                        />
+                                                    </td>
+                                                    {clients.map(c => (
+                                                        <td key={c.id} className="py-0 border-r border-gray-50 last:border-0 relative">
+                                                            <input
+                                                                className={`w-full bg-transparent p-1.5 text-right outline-none text-sm font-mono ${parseFloat(row[c.id]) < 0 ? 'text-red-500 font-medium' : 'text-gray-900'}`}
+                                                                value={row[c.id] !== undefined ? row[c.id] : ''}
+                                                                onChange={(e) => handleCellChange(row.id, c.id, e.target.value)}
+                                                            />
+                                                        </td>
+                                                    ))}
+                                                </tr>
+                                            ))}
+                                        </React.Fragment>
+                                    )
+                                })}
 
-                        {/* BENEFICIO ROW */}
-                        <tr className="border-t border-brand-black border-b-2 bg-brand-black text-white">
-                            <td colSpan={3} className="p-4 text-right font-bold text-white text-sm uppercase tracking-widest">BENEFICIO</td>
-                            {clients.map(c => {
-                                const inc = getTotalIncome(c.id);
-                                const exp = getTotalExpenses(c.id);
-                                const total = inc + exp;
-                                return (
-                                    <td key={c.id} className="p-4 text-right font-black text-white font-mono text-lg border-r border-white/20 last:border-0">
-                                        {total.toLocaleString('es-ES', { minimumFractionDigits: 2 })}
-                                    </td>
-                                )
-                            })}
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                                {/* SUMMARY ROWS - High Contrast Footer */}
 
-            {/* Square Floating Action Button */}
-            <button
-                onClick={() => setModalMode('ADD_CLIENT')}
-                className="fixed bottom-10 right-10 z-[500] w-14 h-14 bg-brand-black text-white shadow-2xl hover:scale-105 transition-transform flex items-center justify-center hover:bg-gray-800 active:scale-95"
-                title="Añadir Cliente"
-            >
-                <Plus size={24} />
-            </button>
+                                {/* TOTAL GASTOS ROW */}
+                                <tr className="border-t-2 border-brand-black bg-gray-100">
+                                    <td colSpan={3} className="p-3 text-right font-bold text-brand-black text-xs uppercase tracking-widest border-r border-gray-200">TOTAL GASTOS</td>
+                                    {clients.map(c => {
+                                        const val = getTotalExpenses(c.id);
+                                        return (
+                                            <td key={c.id} className="p-3 text-right font-bold text-red-500 font-mono text-sm border-r border-gray-300 last:border-0 bg-white">
+                                                {val.toLocaleString('es-ES', { minimumFractionDigits: 2 })}
+                                            </td>
+                                        )
+                                    })}
+                                </tr>
+
+                                {/* BENEFICIO ROW */}
+                                <tr className="border-t border-brand-black border-b-2 bg-brand-black text-white">
+                                    <td colSpan={3} className="p-4 text-right font-bold text-white text-sm uppercase tracking-widest">BENEFICIO</td>
+                                    {clients.map(c => {
+                                        const inc = getTotalIncome(c.id);
+                                        const exp = getTotalExpenses(c.id);
+                                        const total = inc + exp;
+                                        return (
+                                            <td key={c.id} className="p-4 text-right font-black text-white font-mono text-lg border-r border-white/20 last:border-0">
+                                                {total.toLocaleString('es-ES', { minimumFractionDigits: 2 })}
+                                            </td>
+                                        )
+                                    })}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {/* Square Floating Action Button */}
+                    <button
+                        onClick={() => setModalMode('ADD_CLIENT')}
+                        className="fixed bottom-10 right-10 z-[500] w-14 h-14 bg-brand-black text-white shadow-2xl hover:scale-105 transition-transform flex items-center justify-center hover:bg-gray-800 active:scale-95"
+                        title="Añadir Cliente"
+                    >
+                        <Plus size={24} />
+                    </button>
+                </>
+            ) : (
+                <div className="flex-grow overflow-hidden">
+                    <RealExpensesManager fair={initialFair} />
+                </div>
+            )}
 
             {/* MODALS */}
             {modalMode === 'ADD_CLIENT' && (
