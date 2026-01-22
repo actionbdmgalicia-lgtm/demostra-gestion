@@ -4,6 +4,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, ChevronDown, CheckCircle2, TrendingUp, Wallet, FileText, Download, UserPlus, Calendar } from 'lucide-react';
+import InteractiveTour, { TourStep } from '@/components/InteractiveTour';
+
+const TOUR_STEPS: TourStep[] = [
+    { target: 'body', position: 'center', title: 'Bienvenido', description: 'Bienvenido a Demostra Gestión. Este tutorial le guiará por las funciones principales de la aplicación.' },
+    { target: 'h1', position: 'bottom', title: 'Navegación', description: 'Utilice la barra superior para volver al inicio o acceder a las secciones principales como Imputar, Control o Informes.' },
+    { target: '.help-section-1', position: 'bottom', title: 'Crear Feria', description: 'Aquí aprenderá a crear nuevos eventos o ferias en el sistema.' },
+    { target: '.help-section-2', position: 'bottom', title: 'Clientes', description: 'Gestione los clientes dentro de cada feria y sus presupuestos.' },
+    { target: '.help-section-4', position: 'bottom', title: 'Control de Costes', description: 'Registre facturas y gastos reales para mantener el control financiero al día.' }
+];
 
 const HelpSection = ({ title, icon: Icon, children, defaultOpen = false }: any) => {
     const [isOpen, setIsOpen] = useState(defaultOpen);
@@ -41,8 +50,14 @@ const HelpSection = ({ title, icon: Icon, children, defaultOpen = false }: any) 
 };
 
 export default function HelpPage() {
+    const [tourOpen, setTourOpen] = useState(false);
+
+    // Add specific classes to sections for targeting
+    const addClass = (idx: number) => `help-section-${idx}`;
+
     return (
         <div className="min-h-screen bg-brand-light font-sans text-brand-black flex flex-col">
+            <InteractiveTour steps={TOUR_STEPS} isOpen={tourOpen} onClose={() => setTourOpen(false)} />
 
             {/* HEADER */}
             <div className="bg-white px-8 py-6 border-b border-gray-200 flex justify-between items-center sticky top-0 z-50 shadow-sm">
@@ -54,6 +69,23 @@ export default function HelpPage() {
                         <span className="bg-brand-black text-white p-1 rounded-sm"><BookOpen size={20} /></span>
                         Centro de Ayuda
                     </h1>
+                </div>
+                <div className="flex gap-4">
+                    <button
+                        onClick={() => setTourOpen(true)}
+                        className="btn-primary h-10 px-4 text-xs uppercase tracking-widest flex items-center gap-2"
+                    >
+                        <CheckCircle2 size={16} /> Ver Tutorial Interactivo
+                    </button>
+                    <form action={async () => {
+                        'use server';
+                        const { resetDatabase } = await import('@/app/actions_data');
+                        await resetDatabase();
+                    }}>
+                        <button type="submit" className="h-10 px-4 text-[10px] text-red-500 hover:bg-red-50 font-bold uppercase tracking-widest flex items-center gap-2 border border-red-200 rounded-md transition-colors">
+                            Recargar Datos Iniciales
+                        </button>
+                    </form>
                 </div>
             </div>
 
@@ -67,128 +99,140 @@ export default function HelpPage() {
                 </div>
 
                 {/* 1. CREAR FERIA */}
-                <HelpSection title="1. Crear Feria" icon={Calendar} defaultOpen={true}>
-                    <p className="mt-4">
-                        El primer paso para gestionar un evento es crearlo en el sistema.
-                    </p>
-                    <ol className="list-decimal pl-5 space-y-2 mt-4">
-                        <li>Desde la pantalla principal (Panel de Control), localice el bloque <strong>"NUEVA FERIA"</strong>.</li>
-                        <li>Introduzca el <strong>Nombre del Evento</strong> (ej. <em>HIP 2026</em>).</li>
-                        <li>
-                            Opcionalmente, puede seleccionar una feria existente en <strong>"Copiar datos de..."</strong>.
-                            Esto duplicará la estructura de clientes de la feria seleccionada, pero pondrá los presupuestos a cero.
-                        </li>
-                        <li>Pulse el botón <strong>CREAR FERIA</strong>.</li>
-                        <li>La nueva feria aparecerá inmediatamente en el listado inferior.</li>
-                    </ol>
-                </HelpSection>
+                <div className={addClass(1)}>
+                    <HelpSection title="1. Crear Feria" icon={Calendar} defaultOpen={true}>
+                        <p className="mt-4">
+                            El primer paso para gestionar un evento es crearlo en el sistema.
+                        </p>
+                        <ol className="list-decimal pl-5 space-y-2 mt-4">
+                            <li>Desde la pantalla principal (Panel de Control), localice el bloque <strong>"NUEVA FERIA"</strong>.</li>
+                            <li>Introduzca el <strong>Nombre del Evento</strong> (ej. <em>HIP 2026</em>).</li>
+                            <li>
+                                Opcionalmente, puede seleccionar una feria existente en <strong>"Copiar datos de..."</strong>.
+                                Esto duplicará la estructura de clientes de la feria seleccionada, pero pondrá los presupuestos a cero.
+                            </li>
+                            <li>Pulse el botón <strong>CREAR FERIA</strong>.</li>
+                            <li>La nueva feria aparecerá inmediatamente en el listado inferior.</li>
+                        </ol>
+                    </HelpSection>
+                </div>
 
                 {/* 2. CREAR CLIENTE */}
-                <HelpSection title="2. Gestión de Clientes" icon={UserPlus}>
-                    <p className="mt-4">
-                        Dentro de cada feria, debe dar de alta los clientes que participan.
-                    </p>
-                    <ol className="list-decimal pl-5 space-y-2 mt-4">
-                        <li>Haga clic en el nombre de la feria en el listado principal para acceder al <strong>Detalle de la Feria</strong>.</li>
-                        <li>En el panel lateral izquierdo "CLIENTES", pulse el botón <strong>+ NUEVO CLIENTE</strong>.</li>
-                        <li>Introduzca el nombre del cliente y pulse <strong>Guardar</strong>.</li>
-                        <li>El cliente se seleccionará automáticamente y podrá empezar a editar su presupuesto.</li>
-                    </ol>
-                    <div className="mt-4 bg-blue-50 p-4 border-l-4 border-blue-500 text-xs">
-                        <strong>Nota:</strong> Puede archivar clientes antiguos usando el botón de "Archivar" en la esquina superior derecha de la ficha del cliente.
-                    </div>
-                </HelpSection>
+                <div className={addClass(2)}>
+                    <HelpSection title="2. Gestión de Clientes" icon={UserPlus}>
+                        <p className="mt-4">
+                            Dentro de cada feria, debe dar de alta los clientes que participan.
+                        </p>
+                        <ol className="list-decimal pl-5 space-y-2 mt-4">
+                            <li>Haga clic en el nombre de la feria en el listado principal para acceder al <strong>Detalle de la Feria</strong>.</li>
+                            <li>En el panel lateral izquierdo "CLIENTES", pulse el botón <strong>+ NUEVO CLIENTE</strong>.</li>
+                            <li>Introduzca el nombre del cliente y pulse <strong>Guardar</strong>.</li>
+                            <li>El cliente se seleccionará automáticamente y podrá empezar a editar su presupuesto.</li>
+                        </ol>
+                        <div className="mt-4 bg-blue-50 p-4 border-l-4 border-blue-500 text-xs">
+                            <strong>Nota:</strong> Puede archivar clientes antiguos usando el botón de "Archivar" en la esquina superior derecha de la ficha del cliente.
+                        </div>
+                    </HelpSection>
+                </div>
 
                 {/* 3. PRESUPUESTO */}
-                <HelpSection title="3. Definir Presupuesto" icon={FileText}>
-                    <p className="mt-4">
-                        El presupuesto define la previsión de ingresos y gastos par cada cliente.
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2 mt-4">
-                        <li>Seleccione un cliente dentro de una feria.</li>
-                        <li>Verá dos secciones: <strong>INGRESOS (Ventas)</strong> y <strong>GASTOS PREVISTOS</strong>.</li>
-                        <li>Para añadir una partida, pulse <strong>AÑADIR PARTIDA</strong> al final de la lista correspondiente.</li>
-                        <li>
-                            Introduzca:
-                            <ul className="list-circle pl-5 mt-1 text-gray-500">
-                                <li><strong>Concepto/Descripción:</strong> Qué se está presupuestando.</li>
-                                <li><strong>Categoría:</strong> (Solo en gastos) Ej. <em>Carpintería, Electricidad...</em></li>
-                                <li><strong>Importe:</strong> Valor económico (sin sigo negativo).</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Para editar cualquier dato, simplemente haga clic sobre el texto o número que desea modificar.
-                            Los cambios se guardan automáticamente al salir del campo.
-                        </li>
-                    </ul>
-                </HelpSection>
+                <div className={addClass(3)}>
+                    <HelpSection title="3. Definir Presupuesto" icon={FileText}>
+                        <p className="mt-4">
+                            El presupuesto define la previsión de ingresos y gastos par cada cliente.
+                        </p>
+                        <ul className="list-disc pl-5 space-y-2 mt-4">
+                            <li>Seleccione un cliente dentro de una feria.</li>
+                            <li>Verá dos secciones: <strong>INGRESOS (Ventas)</strong> y <strong>GASTOS PREVISTOS</strong>.</li>
+                            <li>Para añadir una partida, pulse <strong>AÑADIR PARTIDA</strong> al final de la lista correspondiente.</li>
+                            <li>
+                                Introduzca:
+                                <ul className="list-circle pl-5 mt-1 text-gray-500">
+                                    <li><strong>Concepto/Descripción:</strong> Qué se está presupuestando.</li>
+                                    <li><strong>Categoría:</strong> (Solo en gastos) Ej. <em>Carpintería, Electricidad...</em></li>
+                                    <li><strong>Importe:</strong> Valor económico (sin sigo negativo).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Para editar cualquier dato, simplemente haga clic sobre el texto o número que desea modificar.
+                                Los cambios se guardan automáticamente al salir del campo.
+                            </li>
+                        </ul>
+                    </HelpSection>
+                </div>
 
                 {/* 4. IMPUTACIONES */}
-                <HelpSection title="4. Imputación de Costes Reales" icon={Wallet}>
-                    <p className="mt-4">
-                        A medida que avanza el proyecto, debe registrar los gastos reales (facturas, tickets) para controlar la desviación.
-                    </p>
-                    <ol className="list-decimal pl-5 space-y-2 mt-4">
-                        <li>
-                            Puede acceder desde el botón <strong>IMPUTAR</strong> en la cabecera principal, o desde la pestaña
-                            <strong>"Control de Costes"</strong> dentro de una feria.
-                        </li>
-                        <li>Pulse <strong>NUEVO MOVIMIENTO</strong>.</li>
-                        <li>
-                            Complete el formulario:
-                            <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-500">
-                                <li><strong>Tipo:</strong> Gasto (Coste) o Ingreso (Venta Real).</li>
-                                <li><strong>Categoría:</strong> Partida a la que pertenece el gasto.</li>
-                                <li><strong>Proveedor:</strong> Nombre de la empresa o persona.</li>
-                                <li><strong>Concepto:</strong> Detalle de la factura.</li>
-                                <li><strong>Fecha:</strong> Fecha de la factura/gasto.</li>
-                                <li><strong>Importe Total:</strong> Cuantía total de la factura.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Distribución:</strong> Si un gasto afecta a varios clientes (ej. Transporte compartido),
-                            puede repartir el importe entre ellos manual o porcentualmente en la sección inferior del formulario.
-                        </li>
-                        <li>Pulse <strong>GUARDAR IMPUTACIÓN</strong>.</li>
-                    </ol>
-                </HelpSection>
+                <div className={addClass(4)}>
+                    <HelpSection title="4. Imputación de Costes Reales" icon={Wallet}>
+                        <p className="mt-4">
+                            A medida que avanza el proyecto, debe registrar los gastos reales (facturas, tickets) para controlar la desviación.
+                        </p>
+                        <ol className="list-decimal pl-5 space-y-2 mt-4">
+                            <li>
+                                Puede acceder desde el botón <strong>IMPUTAR</strong> en la cabecera principal, o desde la pestaña
+                                <strong>"Control de Costes"</strong> dentro de una feria.
+                            </li>
+                            <li>Pulse <strong>NUEVO MOVIMIENTO</strong>.</li>
+                            <li>
+                                Complete el formulario:
+                                <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-500">
+                                    <li><strong>Tipo:</strong> Gasto (Coste) o Ingreso (Venta Real).</li>
+                                    <li><strong>Categoría:</strong> Partida a la que pertenece el gasto.</li>
+                                    <li><strong>Proveedor:</strong> Nombre de la empresa o persona.</li>
+                                    <li><strong>Concepto:</strong> Detalle de la factura.</li>
+                                    <li><strong>Fecha:</strong> Fecha de la factura/gasto.</li>
+                                    <li><strong>Importe Total:</strong> Cuantía total de la factura.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Distribución:</strong> Si un gasto afecta a varios clientes (ej. Transporte compartido),
+                                puede repartir el importe entre ellos manual o porcentualmente en la sección inferior del formulario.
+                            </li>
+                            <li>Pulse <strong>GUARDAR IMPUTACIÓN</strong>.</li>
+                        </ol>
+                    </HelpSection>
+                </div>
 
                 {/* 5. COMPARATIVOS */}
-                <HelpSection title="5. Análisis y Comparativos" icon={TrendingUp}>
-                    <p className="mt-4">
-                        Puede ver el estado de salud económica del proyecto en tiempo real.
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2 mt-4">
-                        <li>
-                            <strong>Vista Comparativa (Control):</strong> Accesible desde el botón <strong>CONTROL</strong> en la home.
-                            Muestra una tabla cruzada de Presupuesto vs Realidad para cada partida y cliente.
-                            <ul className="pl-5 mt-1 text-gray-500 text-xs">
-                                <li>Los valores en <span className="text-red-500 font-bold">ROJO</span> indican que el gasto real supera lo presupuestado (Desviación Negativa).</li>
-                                <li>Los valores en <span className="text-green-500 font-bold">VERDE</span> indican ahorro (Gasto real menor al presupuesto).</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Márgenes y Beneficio:</strong> Al final de las tablas de control, verá filas de resumen con el
-                            <strong>Beneficio Real</strong> y el <strong>% de Margen</strong> actualizado.
-                        </li>
-                    </ul>
-                </HelpSection>
+                <div className={addClass(5)}>
+                    <HelpSection title="5. Análisis y Comparativos" icon={TrendingUp}>
+                        <p className="mt-4">
+                            Puede ver el estado de salud económica del proyecto en tiempo real.
+                        </p>
+                        <ul className="list-disc pl-5 space-y-2 mt-4">
+                            <li>
+                                <strong>Vista Comparativa (Control):</strong> Accesible desde el botón <strong>CONTROL</strong> en la home.
+                                Muestra una tabla cruzada de Presupuesto vs Realidad para cada partida y cliente.
+                                <ul className="pl-5 mt-1 text-gray-500 text-xs">
+                                    <li>Los valores en <span className="text-red-500 font-bold">ROJO</span> indican que el gasto real supera lo presupuestado (Desviación Negativa).</li>
+                                    <li>Los valores en <span className="text-green-500 font-bold">VERDE</span> indican ahorro (Gasto real menor al presupuesto).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Márgenes y Beneficio:</strong> Al final de las tablas de control, verá filas de resumen con el
+                                <strong>Beneficio Real</strong> y el <strong>% de Margen</strong> actualizado.
+                            </li>
+                        </ul>
+                    </HelpSection>
+                </div>
 
                 {/* 6. EXPORTACIONES */}
-                <HelpSection title="6. Exportar Datos" icon={Download}>
-                    <p className="mt-4">
-                        Puede extraer la información del sistema a Excel en cualquier momento.
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2 mt-4">
-                        <li>
-                            <strong>Exportación Completa:</strong> En la Home, el botón de "Exportar Todo" genera un archivo con todas las ferias y datos del sistema (Copia de Seguridad).
-                        </li>
-                        <li>
-                            <strong>Informes Personalizados:</strong> Desde la sección <strong>INFORMES</strong>, puede filtrar por Feria o Cliente y generar
-                            un Excel específico con el desglose de partidas y totales, ideal para presentar a cliente o dirección.
-                        </li>
-                    </ul>
-                </HelpSection>
+                <div className={addClass(6)}>
+                    <HelpSection title="6. Exportar Datos" icon={Download}>
+                        <p className="mt-4">
+                            Puede extraer la información del sistema a Excel en cualquier momento.
+                        </p>
+                        <ul className="list-disc pl-5 space-y-2 mt-4">
+                            <li>
+                                <strong>Exportación Completa:</strong> En la Home, el botón de "Exportar Todo" genera un archivo con todas las ferias y datos del sistema (Copia de Seguridad).
+                            </li>
+                            <li>
+                                <strong>Informes Personalizados:</strong> Desde la sección <strong>INFORMES</strong>, puede filtrar por Feria o Cliente y generar
+                                un Excel específico con el desglose de partidas y totales, ideal para presentar a cliente o dirección.
+                            </li>
+                        </ul>
+                    </HelpSection>
+                </div>
 
             </div>
         </div>
