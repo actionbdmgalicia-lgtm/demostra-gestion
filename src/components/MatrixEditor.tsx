@@ -244,7 +244,7 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
                             onClick={() => setViewMode('REAL')}
                             className={`px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-md transition-all ${viewMode === 'REAL' ? 'bg-white shadow text-brand-black' : 'text-gray-400 hover:text-gray-600'}`}
                         >
-                            Movimientos
+                            REAL
                         </button>
                     </div>
                 </div>
@@ -354,7 +354,7 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
                                 </tr>
 
                                 {/* BENEFICIO ROW */}
-                                <tr className="border-t border-brand-black border-b-2 bg-brand-black text-white">
+                                <tr className="border-t border-brand-black border-b bg-brand-black text-white">
                                     <td colSpan={3} className="p-4 text-right font-bold text-white text-sm uppercase tracking-widest">BENEFICIO</td>
                                     {clients.map(c => {
                                         const inc = getTotalIncome(c.id);
@@ -363,6 +363,28 @@ export default function MatrixEditor({ initialFair }: { initialFair: any }) {
                                         return (
                                             <td key={c.id} className="p-4 text-right font-black text-white font-mono text-lg border-r border-white/20 last:border-0">
                                                 {total.toLocaleString('es-ES', { minimumFractionDigits: 2 })}
+                                            </td>
+                                        )
+                                    })}
+                                </tr>
+                                {/* % BENEFICIO ROW */}
+                                <tr className="border-b-2 border-brand-black bg-brand-black text-white">
+                                    <td colSpan={3} className="p-3 text-right font-bold text-brand-grey text-xs uppercase tracking-widest">% BENEFICIO</td>
+                                    {clients.map(c => {
+                                        const inc = getTotalIncome(c.id);
+                                        const exp = getTotalExpenses(c.id);
+                                        const profit = inc + exp;
+                                        const margin = inc !== 0 ? (profit / inc) * 100 : 0;
+
+                                        // Colorize margin
+                                        let colorClass = "text-brand-grey";
+                                        if (margin > 20) colorClass = "text-green-400";
+                                        else if (margin > 0) colorClass = "text-yellow-400";
+                                        else colorClass = "text-red-400";
+
+                                        return (
+                                            <td key={c.id} className={`p-3 text-right font-bold font-mono text-sm border-r border-white/20 last:border-0 ${colorClass}`}>
+                                                {margin.toFixed(2)}%
                                             </td>
                                         )
                                     })}
