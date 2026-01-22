@@ -1,5 +1,5 @@
 import { getFairs } from '@/lib/api';
-import MatrixEditor from '@/components/MatrixEditor';
+import FairDetail from '@/components/FairDetail';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,5 +10,5 @@ export default async function FeriaDetailPage({ params }: { params: Promise<{ id
 
     if (!feria) return <div>Feria no encontrada</div>;
 
-    return <MatrixEditor initialFair={feria} />;
+    return <FairDetail feria={feria} />;
 }
