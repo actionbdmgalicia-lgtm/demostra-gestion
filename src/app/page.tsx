@@ -3,6 +3,7 @@ import { createFair } from '@/app/actions_home';
 import FairList from '@/components/FairList';
 import FullExportButton from '@/components/FullExportButton';
 import LogoutButton from '@/components/LogoutButton'; // Added
+import ResetButton from '@/components/ResetButton'; // Added
 import { Plus, Copy, LayoutGrid, TrendingUp } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
@@ -33,6 +34,8 @@ export default async function Home() {
           <a href="/informes" className="btn-secondary text-[10px] uppercase tracking-widest flex items-center gap-2 h-10 px-4">
             <LayoutGrid size={14} /> Informes
           </a>
+          <div className="h-6 w-px bg-gray-200 mx-2"></div>
+          <ResetButton />
           <div className="h-6 w-px bg-gray-200 mx-2"></div>
           <LogoutButton />
         </div>

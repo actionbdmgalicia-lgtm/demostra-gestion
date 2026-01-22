@@ -1,6 +1,8 @@
 'use server';
 
-import { getDB } from '@/lib/api';
+import { getDB, saveDB } from '@/lib/api';
+import initialData from '@/data/db.json';
+import { revalidatePath } from 'next/cache';
 
 export async function getAllFairsAndClients() {
     const db = await getDB();
@@ -21,4 +23,10 @@ export async function getAllFairsAndClients() {
 export async function getFullBackupData() {
     const db = await getDB();
     return db.fairs;
+}
+
+export async function resetDatabase() {
+    console.log("Resetting database to initial data...");
+    await saveDB(initialData);
+    revalidatePath('/');
 }
