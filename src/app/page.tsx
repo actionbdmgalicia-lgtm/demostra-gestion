@@ -33,6 +33,9 @@ export default async function Home() {
           <a href="/informes" className="btn-secondary text-[10px] uppercase tracking-widest flex items-center gap-2 h-10 px-4">
             <LayoutGrid size={14} /> Informes
           </a>
+          <a href="/ayuda" className="btn-secondary text-[10px] uppercase tracking-widest flex items-center gap-2 h-10 px-4">
+            <div className="w-3.5 h-3.5 flex items-center justify-center border border-current rounded-full text-[8px] font-bold">?</div> Ayuda
+          </a>
           <div className="h-6 w-px bg-gray-200 mx-2"></div>
           <LogoutButton />
         </div>
