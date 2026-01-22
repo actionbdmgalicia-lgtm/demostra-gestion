@@ -3,6 +3,7 @@ import { createFair } from '@/app/actions_home';
 import FairList from '@/components/FairList';
 import FullExportButton from '@/components/FullExportButton';
 import LogoutButton from '@/components/LogoutButton'; // Added
+import HomeTourButton from '@/components/HomeTourButton';
 import { Plus, Copy, LayoutGrid, TrendingUp } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
@@ -80,6 +81,7 @@ export default async function Home() {
       </div>
 
       <FairList fairs={fairs} />
+      <HomeTourButton />
     </div>
   );
 }
