@@ -126,7 +126,15 @@ export default function RealExpensesManager({ fair, onClose }: RealExpensesManag
                     <tbody>
                         {categories.map((cat) => {
                             const catColor = getCategoryColor(cat);
-                            const items = groupedExpenses[cat];
+                            // Filter items: only show if at least one visible client has a non-zero value
+                            const items = groupedExpenses[cat].filter(item => {
+                                return clients.some((c: any) => {
+                                    const val = item.distribution ? item.distribution[c.id] : 0;
+                                    return val && Math.abs(val) > 0.001;
+                                });
+                            });
+
+                            if (items.length === 0) return null;
 
                             return (
                                 <React.Fragment key={cat}>
