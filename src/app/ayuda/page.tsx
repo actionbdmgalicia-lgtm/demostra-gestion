@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, ChevronDown, CheckCircle2, TrendingUp, Wallet, FileText, Download, UserPlus, Calendar } from 'lucide-react';
 import InteractiveTour, { TourStep } from '@/components/InteractiveTour';
+import { resetDatabase } from '@/app/actions_data';
 
 const TOUR_STEPS: TourStep[] = [
     { target: 'body', position: 'center', title: 'Bienvenido', description: 'Bienvenido a Demostra Gestión. Este tutorial le guiará por las funciones principales de la aplicación.' },
@@ -77,11 +78,7 @@ export default function HelpPage() {
                     >
                         <CheckCircle2 size={16} /> Ver Tutorial Interactivo
                     </button>
-                    <form action={async () => {
-                        'use server';
-                        const { resetDatabase } = await import('@/app/actions_data');
-                        await resetDatabase();
-                    }}>
+                    <form action={resetDatabase}>
                         <button type="submit" className="h-10 px-4 text-[10px] text-red-500 hover:bg-red-50 font-bold uppercase tracking-widest flex items-center gap-2 border border-red-200 rounded-md transition-colors">
                             Recargar Datos Iniciales
                         </button>

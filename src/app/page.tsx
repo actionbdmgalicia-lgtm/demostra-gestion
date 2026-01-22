@@ -10,6 +10,8 @@ export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const fairs = await getFairs();
+  const fairsCount = fairs.length;
+
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-20">
